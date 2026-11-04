@@ -1,0 +1,358 @@
+{
+  "config": {
+    "split_date": "2022-01-01",
+    "dim": 64,
+    "epochs": 300,
+    "k_list": [
+      5,
+      10,
+      20
+    ],
+    "targets": [
+      "allocation",
+      "masking",
+      "intervention_model",
+      "enrollment_bucket"
+    ],
+    "inputs": [
+      "disease",
+      "arch_vo",
+      "vo_platform",
+      "phase",
+      "primary_purpose",
+      "route",
+      "dose",
+      "sex",
+      "older",
+      "child"
+    ],
+    "n_train": 1135,
+    "n_test": 283
+  },
+  "methods": {
+    "frequency_by_phase": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8939929328621908,
+          "macro_f1": 0.47201492537313433,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.30742049469964666,
+          "macro_f1": 0.10182717715185248,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4558303886925795,
+          "macro_f1": 0.26549089766216183,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.63339222614841,
+      "mean_macro_f1": 0.25653758149688133
+    },
+    "logistic": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8833922261484098,
+          "macro_f1": 0.497497982243745,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.3498233215547703,
+          "macro_f1": 0.22429157200367297,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4876325088339223,
+          "macro_f1": 0.39125782844994195,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6492932862190812,
+      "mean_macro_f1": 0.32496617712443415
+    },
+    "hist_gbdt": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8798586572438163,
+          "macro_f1": 0.5810693138279345,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.3745583038869258,
+          "macro_f1": 0.24070357451156563,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8621908127208481,
+          "macro_f1": 0.19727943184922153,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4876325088339223,
+          "macro_f1": 0.3925150640836915,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.651060070671378,
+      "mean_macro_f1": 0.3528918460681033
+    },
+    "ontology_knn_k5": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8480565371024735,
+          "macro_f1": 0.5011273726068954,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.33568904593639576,
+          "macro_f1": 0.2015959304426179,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8551236749116607,
+          "macro_f1": 0.15423836838750796,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49823321554770317,
+          "macro_f1": 0.4178809877170083,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6342756183745583,
+      "mean_macro_f1": 0.3187106647885074
+    },
+    "ontology_knn_k10": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8657243816254417,
+          "macro_f1": 0.48887832699619777,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.3957597173144876,
+          "macro_f1": 0.2544684319947478,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18752362948960302,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49469964664310956,
+          "macro_f1": 0.3966839664628018,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.3318885887358376
+    },
+    "ontology_knn_k20": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8939929328621908,
+          "macro_f1": 0.47201492537313433,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.3710247349823322,
+          "macro_f1": 0.2287532140961393,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49823321554770317,
+          "macro_f1": 0.36786646994980327,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6598939929328622,
+      "mean_macro_f1": 0.3138629838048634
+    },
+    "transe_knn_k5": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8515901060070671,
+          "macro_f1": 0.5393023255813953,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.2791519434628975,
+          "macro_f1": 0.17127972646548498,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8657243816254417,
+          "macro_f1": 0.18595825426944973,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.36042402826855124,
+          "macro_f1": 0.31962014129572547,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.5892226148409894,
+      "mean_macro_f1": 0.30404011190301383
+    },
+    "transe_knn_k10": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.872791519434629,
+          "macro_f1": 0.5370774263904035,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.303886925795053,
+          "macro_f1": 0.19169509594882728,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.3568904593639576,
+          "macro_f1": 0.2880069063416414,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6024734982332155,
+      "mean_macro_f1": 0.3008991886203122
+    },
+    "transe_knn_k20": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8975265017667845,
+          "macro_f1": 0.5051552607778113,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.31095406360424027,
+          "macro_f1": 0.1611612233043724,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.38515901060070673,
+          "macro_f1": 0.27048049500660076,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6174911660777386,
+      "mean_macro_f1": 0.28090357622229023
+    },
+    "compgcn_knn_k5": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.872791519434629,
+          "macro_f1": 0.5157794676806083,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.2791519434628975,
+          "macro_f1": 0.10166403272287812,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.872791519434629,
+          "macro_f1": 0.15563957151858854,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.17667844522968199,
+          "macro_f1": 0.13430660462867847,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.5503533568904594,
+      "mean_macro_f1": 0.22684741913768838
+    },
+    "compgcn_knn_k10": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8975265017667845,
+          "macro_f1": 0.5051552607778113,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.2826855123674912,
+          "macro_f1": 0.10230150660874386,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.872791519434629,
+          "macro_f1": 0.18641509433962264,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4275618374558304,
+          "macro_f1": 0.21526445184102197,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6201413427561837,
+      "mean_macro_f1": 0.25228407839179995
+    },
+    "compgcn_knn_k20": {
+      "n": 283,
+      "targets": {
+        "allocation": {
+          "accuracy": 0.8975265017667845,
+          "macro_f1": 0.5051552607778113,
+          "n_classes_gold": 2
+        },
+        "masking": {
+          "accuracy": 0.2968197879858657,
+          "macro_f1": 0.09936507936507936,
+          "n_classes_gold": 5
+        },
+        "intervention_model": {
+          "accuracy": 0.872791519434629,
+          "macro_f1": 0.18641509433962264,
+          "n_classes_gold": 5
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.43462897526501765,
+          "macro_f1": 0.21578744042299672,
+          "n_classes_gold": 4
+        }
+      },
+      "mean_accuracy": 0.6254416961130742,
+      "mean_macro_f1": 0.2516807187263775
+    }
+  }
+}

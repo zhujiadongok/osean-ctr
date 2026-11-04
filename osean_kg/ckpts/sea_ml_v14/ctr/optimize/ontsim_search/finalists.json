@@ -1,0 +1,314 @@
+{
+  "note": "Default-weight finalists + best tuned chrono variant.",
+  "rows": [
+    {
+      "name": "tuned_gated_ic_sib_no_route",
+      "chrono_acc": 0.6696113074204948,
+      "chrono_f1": 0.3456820305657634,
+      "pooled_trial": 0.6384180790960451,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "chrono_delta": 0.01148409893992941,
+      "pooled_delta": 0.018159806295399372,
+      "score": 0.021030831030381725
+    },
+    {
+      "name": "gated_ic_sib",
+      "chrono_acc": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled_trial": 0.6390234059725585,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": "default",
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.01876513317191275,
+      "score": 0.01876513317191275
+    },
+    {
+      "name": "default_w_gated_ic_sib",
+      "chrono_acc": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled_trial": 0.6390234059725585,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.01876513317191275,
+      "score": 0.01876513317191275
+    },
+    {
+      "name": "ic_sib",
+      "chrono_acc": 0.6492932862190812,
+      "chrono_f1": 0.34851819019467456,
+      "pooled_trial": 0.6390234059725585,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": "default",
+      "chrono_delta": -0.008833922261484162,
+      "pooled_delta": 0.01876513317191275,
+      "score": 0.01655665260654171
+    },
+    {
+      "name": "gated_ic_sep_sib",
+      "chrono_acc": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled_trial": 0.6361985472154964,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": "default",
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.015940274414850686,
+      "score": 0.015940274414850686
+    },
+    {
+      "name": "ic",
+      "chrono_acc": 0.6625441696113075,
+      "chrono_f1": 0.325408474104686,
+      "pooled_trial": 0.6343825665859564,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": "default",
+      "chrono_delta": 0.004416961130742081,
+      "pooled_delta": 0.01412429378531066,
+      "score": 0.01522853406799618
+    },
+    {
+      "name": "ic_sep",
+      "chrono_acc": 0.6625441696113075,
+      "chrono_f1": 0.325408474104686,
+      "pooled_trial": 0.6343825665859564,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": "default",
+      "chrono_delta": 0.004416961130742081,
+      "pooled_delta": 0.01412429378531066,
+      "score": 0.01522853406799618
+    },
+    {
+      "name": "gated_sep",
+      "chrono_acc": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled_trial": 0.6349878934624698,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": "default",
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.014729620661824039,
+      "score": 0.014729620661824039
+    },
+    {
+      "name": "paper_union",
+      "chrono_acc": 0.6563604240282686,
+      "chrono_f1": 0.3256369563189934,
+      "pooled_trial": 0.6349878934624698,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": "default",
+      "chrono_delta": -0.0017667844522968323,
+      "pooled_delta": 0.014729620661824039,
+      "score": 0.01428792454874983
+    },
+    {
+      "name": "sep",
+      "chrono_acc": 0.6563604240282686,
+      "chrono_f1": 0.32558951830330735,
+      "pooled_trial": 0.6349878934624698,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": "default",
+      "chrono_delta": -0.0017667844522968323,
+      "pooled_delta": 0.014729620661824039,
+      "score": 0.01428792454874983
+    },
+    {
+      "name": "tuned_gated_ic_sib+route",
+      "chrono_acc": 0.6643109540636043,
+      "chrono_f1": 0.3325227424695531,
+      "pooled_trial": 0.6329701372074252,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "chrono_delta": 0.006183745583038913,
+      "pooled_delta": 0.012711864406779516,
+      "score": 0.014257800802539244
+    },
+    {
+      "name": "gated_ic",
+      "chrono_acc": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled_trial": 0.6343825665859564,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": "default",
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.01412429378531066,
+      "score": 0.01412429378531066
+    },
+    {
+      "name": "gated_ic_sep",
+      "chrono_acc": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled_trial": 0.6343825665859564,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": "default",
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.01412429378531066,
+      "score": 0.01412429378531066
+    },
+    {
+      "name": "ic_ch1",
+      "chrono_acc": 0.6625441696113075,
+      "chrono_f1": 0.3308551816699232,
+      "pooled_trial": 0.6311541565778854,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": "default",
+      "chrono_delta": 0.004416961130742081,
+      "pooled_delta": 0.010895883777239712,
+      "score": 0.012000124059925232
+    },
+    {
+      "name": "exact",
+      "chrono_acc": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled_trial": 0.6202582728006457,
+      "cfg": null,
+      "weights": "default",
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.0,
+      "score": 0.0
+    }
+  ],
+  "best_by_score": {
+    "name": "tuned_gated_ic_sib_no_route",
+    "chrono_acc": 0.6696113074204948,
+    "chrono_f1": 0.3456820305657634,
+    "pooled_trial": 0.6384180790960451,
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "chrono_delta": 0.01148409893992941,
+    "pooled_delta": 0.018159806295399372,
+    "score": 0.021030831030381725
+  }
+}

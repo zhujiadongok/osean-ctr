@@ -1,0 +1,489 @@
+{
+  "locked": "hist_gbdt",
+  "best_graph_method": "graph_family_ensemble",
+  "graph_wins_on_val": false,
+  "val_scores": {
+    "frequency_by_phase": {
+      "coarse4": {
+        "mean_accuracy": 0.8012295081967213,
+        "mean_macro_f1": 0.5665252961980368,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8524590163934426,
+            "macro_f1": 0.46017699115044247,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.7377049180327869,
+            "macro_f1": 0.6540233959588798,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8729508196721312,
+            "macro_f1": 0.4660831509846827,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.7418032786885246,
+            "macro_f1": 0.6858176466981422,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.7397540983606558,
+        "mean_macro_f1": 0.669920521328511,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.7377049180327869,
+            "macro_f1": 0.6540233959588798,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.7418032786885246,
+            "macro_f1": 0.6858176466981422,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    },
+    "logistic": {
+      "coarse4": {
+        "mean_accuracy": 0.8002049180327869,
+        "mean_macro_f1": 0.6305978441892093,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.860655737704918,
+            "macro_f1": 0.5753480753480753,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.6926229508196722,
+            "macro_f1": 0.642961662276851,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8647540983606558,
+            "macro_f1": 0.540174747301696,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.7827868852459017,
+            "macro_f1": 0.7639068918302145,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.7377049180327869,
+        "mean_macro_f1": 0.7034342770535328,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.6926229508196722,
+            "macro_f1": 0.642961662276851,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.7827868852459017,
+            "macro_f1": 0.7639068918302145,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    },
+    "hist_gbdt": {
+      "coarse4": {
+        "mean_accuracy": 0.8084016393442623,
+        "mean_macro_f1": 0.6006706242310503,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8483606557377049,
+            "macro_f1": 0.484438353035235,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.7172131147540983,
+            "macro_f1": 0.6400025659118609,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8565573770491803,
+            "macro_f1": 0.48822436627314675,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.8114754098360656,
+            "macro_f1": 0.7900172117039587,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.764344262295082,
+        "mean_macro_f1": 0.7150098888079097,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.7172131147540983,
+            "macro_f1": 0.6400025659118609,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.8114754098360656,
+            "macro_f1": 0.7900172117039587,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    },
+    "ontology_knn_k20": {
+      "coarse4": {
+        "mean_accuracy": 0.7858606557377049,
+        "mean_macro_f1": 0.5621463595869786,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8524590163934426,
+            "macro_f1": 0.46017699115044247,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.6598360655737705,
+            "macro_f1": 0.5990576310110669,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8565573770491803,
+            "macro_f1": 0.4613686534216336,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.7745901639344263,
+            "macro_f1": 0.7279821627647715,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.7172131147540983,
+        "mean_macro_f1": 0.6635198968879192,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.6598360655737705,
+            "macro_f1": 0.5990576310110669,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.7745901639344263,
+            "macro_f1": 0.7279821627647715,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    },
+    "feature_rgcn": {
+      "coarse4": {
+        "mean_accuracy": 0.6762295081967213,
+        "mean_macro_f1": 0.4746371454970455,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.7909836065573771,
+            "macro_f1": 0.5796939912858445,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.6844262295081968,
+            "macro_f1": 0.5262135922330098,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8688524590163934,
+            "macro_f1": 0.4649122807017544,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.36065573770491804,
+            "macro_f1": 0.3277287177675733,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.5225409836065574,
+        "mean_macro_f1": 0.42697115500029154,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.6844262295081968,
+            "macro_f1": 0.5262135922330098,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.36065573770491804,
+            "macro_f1": 0.3277287177675733,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    },
+    "gbdt_plus_feature_rgcn": {
+      "coarse4": {
+        "mean_accuracy": 0.7202868852459017,
+        "mean_macro_f1": 0.4821724866773802,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8442622950819673,
+            "macro_f1": 0.4577777777777778,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.6844262295081968,
+            "macro_f1": 0.5046273103593746,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8688524590163934,
+            "macro_f1": 0.4941694739569837,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.48360655737704916,
+            "macro_f1": 0.4721153846153846,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.584016393442623,
+        "mean_macro_f1": 0.4883713474873796,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.6844262295081968,
+            "macro_f1": 0.5046273103593746,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.48360655737704916,
+            "macro_f1": 0.4721153846153846,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    },
+    "logistic_plus_feature_rgcn": {
+      "coarse4": {
+        "mean_accuracy": 0.7131147540983606,
+        "mean_macro_f1": 0.47399131119472593,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8483606557377049,
+            "macro_f1": 0.458980044345898,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.6557377049180327,
+            "macro_f1": 0.46373626373626375,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8688524590163934,
+            "macro_f1": 0.4941694739569837,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.47950819672131145,
+            "macro_f1": 0.47907946273975827,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.5676229508196721,
+        "mean_macro_f1": 0.471407863238011,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.6557377049180327,
+            "macro_f1": 0.46373626373626375,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.47950819672131145,
+            "macro_f1": 0.47907946273975827,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    },
+    "graph_family_ensemble": {
+      "coarse4": {
+        "mean_accuracy": 0.7489754098360655,
+        "mean_macro_f1": 0.5091392104281898,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8524590163934426,
+            "macro_f1": 0.46017699115044247,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "masking_binary": {
+            "accuracy": 0.7213114754098361,
+            "macro_f1": 0.5590986394557823,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "intervention_binary": {
+            "accuracy": 0.8688524590163934,
+            "macro_f1": 0.4649122807017544,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.5532786885245902,
+            "macro_f1": 0.5523689304047799,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      },
+      "hard2": {
+        "mean_accuracy": 0.6372950819672132,
+        "mean_macro_f1": 0.555733784930281,
+        "per_target": {
+          "masking_binary": {
+            "accuracy": 0.7213114754098361,
+            "macro_f1": 0.5590986394557823,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          },
+          "enrollment_binary": {
+            "accuracy": 0.5532786885245902,
+            "macro_f1": 0.5523689304047799,
+            "n_classes_gold": 2,
+            "n_eval": 244
+          }
+        }
+      }
+    }
+  },
+  "test_scores": {
+    "frequency_by_phase": {
+      "coarse4": 0.8021201413427562,
+      "hard2": 0.7190812720848057,
+      "per_target": {
+        "allocation": 0.8939929328621908,
+        "masking_binary": 0.7314487632508834,
+        "intervention_binary": 0.8763250883392226,
+        "enrollment_binary": 0.7067137809187279
+      }
+    },
+    "logistic": {
+      "coarse4": 0.8136042402826855,
+      "hard2": 0.7438162544169611,
+      "per_target": {
+        "allocation": 0.8869257950530035,
+        "masking_binary": 0.7031802120141343,
+        "intervention_binary": 0.8798586572438163,
+        "enrollment_binary": 0.784452296819788
+      }
+    },
+    "hist_gbdt": {
+      "coarse4": 0.8197879858657243,
+      "hard2": 0.7561837455830389,
+      "per_target": {
+        "allocation": 0.8869257950530035,
+        "masking_binary": 0.7102473498233216,
+        "intervention_binary": 0.8798586572438163,
+        "enrollment_binary": 0.8021201413427562
+      }
+    },
+    "ontology_knn_k20": {
+      "coarse4": 0.799469964664311,
+      "hard2": 0.715547703180212,
+      "per_target": {
+        "allocation": 0.8939929328621908,
+        "masking_binary": 0.6855123674911661,
+        "intervention_binary": 0.872791519434629,
+        "enrollment_binary": 0.7455830388692579
+      }
+    },
+    "feature_rgcn": {
+      "coarse4": 0.7270318021201413,
+      "hard2": 0.5706713780918727,
+      "per_target": {
+        "allocation": 0.8939929328621908,
+        "masking_binary": 0.696113074204947,
+        "intervention_binary": 0.872791519434629,
+        "enrollment_binary": 0.4452296819787986
+      }
+    },
+    "gbdt_plus_feature_rgcn": {
+      "coarse4": 0.661660777385159,
+      "hard2": 0.5424028268551236,
+      "per_target": {
+        "allocation": 0.8904593639575972,
+        "masking_binary": 0.4628975265017668,
+        "intervention_binary": 0.6713780918727915,
+        "enrollment_binary": 0.6219081272084805
+      }
+    },
+    "logistic_plus_feature_rgcn": {
+      "coarse4": 0.5388692579505301,
+      "hard2": 0.4840989399293286,
+      "per_target": {
+        "allocation": 0.833922261484099,
+        "masking_binary": 0.34275618374558303,
+        "intervention_binary": 0.35335689045936397,
+        "enrollment_binary": 0.6254416961130742
+      }
+    },
+    "graph_family_ensemble": {
+      "coarse4": 0.78886925795053,
+      "hard2": 0.6925795053003534,
+      "per_target": {
+        "allocation": 0.8939929328621908,
+        "masking_binary": 0.7031802120141343,
+        "intervention_binary": 0.8763250883392226,
+        "enrollment_binary": 0.6819787985865724
+      }
+    }
+  }
+}

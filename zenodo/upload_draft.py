@@ -1,7 +1,13 @@
-"""Update reserved Zenodo deposition as Save draft (do NOT publish).
+"""Create or update a Zenodo deposition draft (does NOT publish).
 
 Requires env ZENODO_TOKEN with deposit:write scope.
-Deposition: https://doi.org/10.5281/zenodo.23773934
+
+Usage:
+  # first time: creates a new draft
+  python upload_draft.py
+
+  # later: set DEPOSITION_ID to the draft id returned previously
+  python upload_draft.py
 """
 
 from __future__ import annotations
@@ -13,30 +19,29 @@ from pathlib import Path
 
 import requests
 
-DEPOSITION_ID = 23773934
-ZIP = Path(__file__).resolve().parent / "OSEAN-CTDR_supporting_data.zip"
-META_PATH = Path(__file__).resolve().parent / "package" / "ZENODO_METADATA.txt"
+# Set after first create, or leave 0 to create a new draft.
+DEPOSITION_ID = 0
+ZIP = Path(__file__).resolve().parent / "OSEAN-CTR_supporting_data.zip"
 BASE = "https://zenodo.org/api"
 
 
 def metadata() -> dict:
     return {
         "title": (
-            "OSEAN-CTDR supporting data: Vaccine Ontology, CTDR feature "
+            "OSEAN-CTR supporting data: Vaccine Ontology, CTR feature "
             "sidecars, and frozen evaluation artifacts"
         ),
         "upload_type": "dataset",
         "description": (
-            "<p>Supporting data for OSEAN-CTDR (SEA-CDM–based vaccine trial "
+            "<p>Supporting data for OSEAN-CTR (SEA-CDM–based vaccine trial "
             "evidence integration and ontology-guided design-field prediction). "
-            "Includes the Vaccine Ontology OWL file used in analyses "
-            "(release 2026-06-12), CTDR feature sidecars, frozen result JSON "
-            "artifacts (Table 1 / Setting B / post-remediation LOMO), mapping "
-            "audit overlays, and class-label helpers. Companion code: "
-            "<a href=\"https://github.com/zhujiadongok/osean-ctdr\">"
-            "https://github.com/zhujiadongok/osean-ctdr</a>. Full AACT dump is "
-            "not redistributed; local snapshot identifiers and checksums are "
-            "documented in README.md and the manuscript Table S8.</p>"
+            "Includes Vaccine Ontology (release 2026-06-12) when packaged, CTR "
+            "feature sidecars, frozen result JSON artifacts, mapping audit "
+            "overlays, and class-label helpers. Companion code: "
+            '<a href="https://github.com/zhujiadongok/osean-ctr">'
+            "https://github.com/zhujiadongok/osean-ctr</a>. Full AACT dump is "
+            "not redistributed; snapshot identifiers are in the manuscript "
+            "Table S8.</p>"
         ),
         "creators": [
             {"name": "Zhu, Jiadong", "affiliation": "University of Michigan"},
@@ -50,13 +55,13 @@ def metadata() -> dict:
             "Vaccine Ontology",
             "ClinicalTrials.gov",
             "knowledge graph",
-            "OSEAN-CTDR",
+            "OSEAN-CTR",
         ],
         "access_right": "open",
         "license": "cc-by-4.0",
         "related_identifiers": [
             {
-                "identifier": "https://github.com/zhujiadongok/osean-ctdr",
+                "identifier": "https://github.com/zhujiadongok/osean-ctr",
                 "relation": "isSupplementTo",
                 "resource_type": "software",
             },
@@ -79,26 +84,37 @@ def main() -> None:
         sys.exit(2)
 
     headers = {"Authorization": f"Bearer {token}"}
-    r = requests.get(f"{BASE}/deposit/depositions/{DEPOSITION_ID}", headers=headers, timeout=60)
-    r.raise_for_status()
-    dep = r.json()
-    print("state:", dep.get("state"), "submitted:", dep.get("submitted"), "doi:", dep.get("doi"))
+    dep_id = DEPOSITION_ID
+    if not dep_id:
+        r = requests.post(f"{BASE}/deposit/depositions", json={}, headers=headers, timeout=60)
+        r.raise_for_status()
+        dep = r.json()
+        dep_id = dep["id"]
+        print("created draft id:", dep_id)
+    else:
+        r = requests.get(f"{BASE}/deposit/depositions/{dep_id}", headers=headers, timeout=60)
+        r.raise_for_status()
+        dep = r.json()
+
     if dep.get("submitted"):
-        print("ERROR: deposition already published; refusing to mutate without newversion.", file=sys.stderr)
+        print("ERROR: deposition already published; create a new version on Zenodo UI.", file=sys.stderr)
         sys.exit(3)
 
-    # Replace files: delete existing then upload zip via bucket
     for f in dep.get("files") or []:
         fid = f.get("id")
         if not fid:
             continue
         dr = requests.delete(
-            f"{BASE}/deposit/depositions/{DEPOSITION_ID}/files/{fid}",
+            f"{BASE}/deposit/depositions/{dep_id}/files/{fid}",
             headers=headers,
             timeout=60,
         )
         print("delete", f.get("filename"), dr.status_code)
 
+    # refresh links
+    r = requests.get(f"{BASE}/deposit/depositions/{dep_id}", headers=headers, timeout=60)
+    r.raise_for_status()
+    dep = r.json()
     bucket = dep["links"]["bucket"]
     with ZIP.open("rb") as fh:
         put = requests.put(
@@ -107,12 +123,11 @@ def main() -> None:
             headers={**headers, "Content-Type": "application/octet-stream"},
             timeout=600,
         )
-    print("upload", put.status_code, put.text[:300])
+    print("upload", put.status_code)
     put.raise_for_status()
 
-    # Save draft metadata (PUT deposition) — does not publish
     pr = requests.put(
-        f"{BASE}/deposit/depositions/{DEPOSITION_ID}",
+        f"{BASE}/deposit/depositions/{dep_id}",
         headers={**headers, "Content-Type": "application/json"},
         data=json.dumps({"metadata": metadata()}),
         timeout=60,
@@ -131,16 +146,10 @@ def main() -> None:
                 "submitted": out.get("submitted"),
                 "doi": out.get("doi") or out.get("metadata", {}).get("prereserve_doi"),
                 "html": out.get("links", {}).get("html"),
-                "note": "Saved as draft only; not published.",
+                "note": "Saved as draft only; publish on Zenodo UI when ready.",
             },
             indent=2,
         )
-    )
-    META_PATH.write_text(
-        META_PATH.read_text(encoding="utf-8")
-        if META_PATH.exists()
-        else "",
-        encoding="utf-8",
     )
 
 

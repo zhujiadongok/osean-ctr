@@ -1,0 +1,95 @@
+{
+  "locked": "hist_gbdt",
+  "best_gnn_on_val": "rgcn_d128_e400_lr0.01",
+  "val_top": [
+    {
+      "name": "hist_gbdt",
+      "mean_accuracy": 0.6557377049180328,
+      "mean_macro_f1": 0.347682922737664
+    },
+    {
+      "name": "ontology_knn_k20",
+      "mean_accuracy": 0.646516393442623,
+      "mean_macro_f1": 0.32322446328828125
+    },
+    {
+      "name": "logistic",
+      "mean_accuracy": 0.6372950819672131,
+      "mean_macro_f1": 0.34577063971579153
+    },
+    {
+      "name": "rgcn_d128_e400_lr0.01",
+      "mean_accuracy": 0.6352459016393444,
+      "mean_macro_f1": 0.26534217438142554
+    },
+    {
+      "name": "sage_d128_e400_lr0.005",
+      "mean_accuracy": 0.632172131147541,
+      "mean_macro_f1": 0.29635891614402576
+    },
+    {
+      "name": "rgcn_d128_e400_lr0.005",
+      "mean_accuracy": 0.6301229508196722,
+      "mean_macro_f1": 0.25071819710598525
+    },
+    {
+      "name": "sage_d128_e400_lr0.01",
+      "mean_accuracy": 0.6301229508196721,
+      "mean_macro_f1": 0.2764054801464466
+    },
+    {
+      "name": "sage_d64_e300_lr0.01",
+      "mean_accuracy": 0.6260245901639343,
+      "mean_macro_f1": 0.25202447786828797
+    },
+    {
+      "name": "rgcn_d64_e300_lr0.01",
+      "mean_accuracy": 0.6209016393442623,
+      "mean_macro_f1": 0.259307697882986
+    },
+    {
+      "name": "frequency_by_phase",
+      "mean_accuracy": 0.6014344262295083,
+      "mean_macro_f1": 0.2619313863665689
+    },
+    {
+      "name": "gat_d128_e400_lr0.005",
+      "mean_accuracy": 0.5850409836065574,
+      "mean_macro_f1": 0.26305616766713125
+    },
+    {
+      "name": "gat_d64_e300_lr0.01",
+      "mean_accuracy": 0.5573770491803278,
+      "mean_macro_f1": 0.234244778207713
+    },
+    {
+      "name": "gat_d128_e400_lr0.01",
+      "mean_accuracy": 0.5563524590163935,
+      "mean_macro_f1": 0.23121322242175224
+    }
+  ],
+  "test_scores": {
+    "hist_gbdt": {
+      "mean_accuracy": 0.6590106007067138,
+      "mean_macro_f1": 0.36608967568530143
+    },
+    "logistic": {
+      "mean_accuracy": 0.661660777385159,
+      "mean_macro_f1": 0.33925396288492293
+    },
+    "ontology_knn_k20": {
+      "mean_accuracy": 0.6598939929328622,
+      "mean_macro_f1": 0.3138629838048634
+    },
+    "frequency_by_phase": {
+      "mean_accuracy": 0.63339222614841,
+      "mean_macro_f1": 0.25653758149688133
+    },
+    "rgcn_d128_e400_lr0.01": {
+      "mean_accuracy": 0.6369257950530035,
+      "mean_macro_f1": 0.25913737780985807
+    }
+  },
+  "gnn_locked": false,
+  "graph": "OSEAN/CTDR input graph (SEA-CDM boxes + vo.owl + same_context); targets excluded"
+}

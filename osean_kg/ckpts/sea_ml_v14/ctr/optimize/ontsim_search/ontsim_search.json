@@ -1,0 +1,1286 @@
+{
+  "protocol": {
+    "val_window": "2019-01-01 <= start < 2022-01-01",
+    "fit": "start < 2019-01-01",
+    "test": "start >= 2022-01-01",
+    "k": 20,
+    "n_structural": 71,
+    "top_struct_tuned": 8,
+    "elapsed_sec": 354.7
+  },
+  "sanity_pair": {
+    "pair": [
+      "VO_0005198",
+      "VO_0004908"
+    ],
+    "paper_union": 0.5454545454545454,
+    "paper_subclass": 0.6666666666666666,
+    "sep_a0.3": 0.6666666666666666,
+    "ic_sep": 0.46275692434692967,
+    "ch1_sep": 0.14,
+    "sib_sep": 0.11764705882352941
+  },
+  "structural_val_top12": [
+    {
+      "key": "ch0_sib0_ic1_rolenone_a0.30_gate0",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6516393442622951,
+      "mean_macro_f1": 0.33414369914170305,
+      "sec": 1.13
+    },
+    {
+      "key": "ch0_sib1_ic1_rolenone_a0.30_gate1",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6485655737704918,
+      "mean_macro_f1": 0.33685166141048495,
+      "sec": 3.13
+    },
+    {
+      "key": "ch1_sib1_ic1_rolesep_a0.50_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.5,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6485655737704918,
+      "mean_macro_f1": 0.3274082453732764,
+      "sec": 0.86
+    },
+    {
+      "key": "ch1_sib1_ic1_rolenone_a0.30_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6485655737704918,
+      "mean_macro_f1": 0.3272924236949547,
+      "sec": 0.96
+    },
+    {
+      "key": "ch1_sib1_ic1_roleunion_a0.30_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6485655737704918,
+      "mean_macro_f1": 0.3272924236949547,
+      "sec": 1.08
+    },
+    {
+      "key": "ch1_sib1_ic1_rolesep_a0.30_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6475409836065574,
+      "mean_macro_f1": 0.3258201843115311,
+      "sec": 0.89
+    },
+    {
+      "key": "ch0_sib0_ic1_rolenone_a0.30_gate1",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6475409836065573,
+      "mean_macro_f1": 0.32938464207156015,
+      "sec": 0.79
+    },
+    {
+      "key": "ch0_sib0_ic1_rolesep_a0.20_gate0",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.646516393442623,
+      "mean_macro_f1": 0.33068843183191876,
+      "sec": 1.68
+    },
+    {
+      "key": "ch0_sib0_ic1_rolesep_a0.30_gate0",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.646516393442623,
+      "mean_macro_f1": 0.33068843183191876,
+      "sec": 0.95
+    },
+    {
+      "key": "ch0_sib0_ic1_rolesep_a0.50_gate0",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.5,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.646516393442623,
+      "mean_macro_f1": 0.33068843183191876,
+      "sec": 1.02
+    },
+    {
+      "key": "ch1_sib1_ic1_rolesep_a0.20_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.646516393442623,
+      "mean_macro_f1": 0.32411820208323305,
+      "sec": 0.94
+    },
+    {
+      "key": "ch0_sib1_ic1_rolenone_a0.30_gate0",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "mean_accuracy": 0.6454918032786886,
+      "mean_macro_f1": 0.34549964017181645,
+      "sec": 1.28
+    }
+  ],
+  "tuned_val": [
+    {
+      "key": "ch1_sib1_ic1_rolenone_a0.30_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.6577868852459017,
+      "mean_macro_f1": 0.3483900108012627
+    },
+    {
+      "key": "ch1_sib1_ic1_rolesep_a0.20_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.6577868852459017,
+      "mean_macro_f1": 0.3483158414974652
+    },
+    {
+      "key": "ch1_sib1_ic1_rolesep_a0.20_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.6577868852459017,
+      "mean_macro_f1": 0.3483158414974652
+    },
+    {
+      "key": "ch1_sib1_ic1_roleunion_a0.30_gate0",
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.6577868852459017,
+      "mean_macro_f1": 0.3483158414974652
+    },
+    {
+      "key": "ch0_sib1_ic1_rolenone_a0.30_gate1",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.6547131147540983,
+      "mean_macro_f1": 0.3492964349747101
+    },
+    {
+      "key": "ch0_sib0_ic1_rolesep_a0.20_gate0",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 0.5,
+        "w_material": 0.25,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.6547131147540983,
+      "mean_macro_f1": 0.3399176453228403
+    },
+    {
+      "key": "ch0_sib0_ic1_rolenone_a0.30_gate0",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 0.5,
+        "w_material": 0.25,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.653688524590164,
+      "mean_macro_f1": 0.33945537849260293
+    },
+    {
+      "key": "ch0_sib0_ic1_rolenone_a0.30_gate1",
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "mean_accuracy": 0.6536885245901639,
+      "mean_macro_f1": 0.3462186915903135
+    }
+  ],
+  "chrono_test": {
+    "exact": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.32056117449815,
+      "cfg": null,
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      }
+    },
+    "paper_union": {
+      "mean_accuracy": 0.6563604240282686,
+      "mean_macro_f1": 0.3256369563189934,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      }
+    },
+    "gated_sep": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.32056117449815,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      }
+    },
+    "gated_ic_sep": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.32056117449815,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      }
+    },
+    "ic_sep": {
+      "mean_accuracy": 0.6625441696113075,
+      "mean_macro_f1": 0.325408474104686,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      }
+    },
+    "tuned_1_ch1_sib1_ic1_rolenone_a0.30_gate0": {
+      "mean_accuracy": 0.6537102473498233,
+      "mean_macro_f1": 0.34312601229629125,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      }
+    },
+    "tuned_2_ch1_sib1_ic1_rolesep_a0.20_gate0": {
+      "mean_accuracy": 0.6537102473498233,
+      "mean_macro_f1": 0.34312601229629125,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      }
+    },
+    "tuned_3_ch1_sib1_ic1_rolesep_a0.20_gate0": {
+      "mean_accuracy": 0.6537102473498233,
+      "mean_macro_f1": 0.34312601229629125,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      }
+    },
+    "tuned_4_ch1_sib1_ic1_roleunion_a0.30_gate0": {
+      "mean_accuracy": 0.6528268551236749,
+      "mean_macro_f1": 0.3427715056917846,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      }
+    },
+    "tuned_5_ch0_sib1_ic1_rolenone_a0.30_gate1": {
+      "mean_accuracy": 0.6643109540636043,
+      "mean_macro_f1": 0.3325227424695531,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      }
+    }
+  },
+  "chrono_bootstrap_vs_exact": {
+    "paper_union_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": -0.0017667844522968198,
+      "ci95_lo": -0.0176678445229682,
+      "ci95_hi": 0.013250883392226149,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "gated_sep_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": 0.0,
+      "ci95_lo": 0.0,
+      "ci95_hi": 0.0,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "gated_ic_sep_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": 0.0,
+      "ci95_lo": 0.0,
+      "ci95_hi": 0.0,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "ic_sep_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": 0.00441696113074205,
+      "ci95_lo": -0.00530035335689046,
+      "ci95_hi": 0.014134275618374558,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "tuned_1_ch1_sib1_ic1_rolenone_a0.30_gate0_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": -0.00441696113074205,
+      "ci95_lo": -0.022084805653710248,
+      "ci95_hi": 0.014134275618374558,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "tuned_2_ch1_sib1_ic1_rolesep_a0.20_gate0_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": -0.00441696113074205,
+      "ci95_lo": -0.022084805653710248,
+      "ci95_hi": 0.014134275618374558,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "tuned_3_ch1_sib1_ic1_rolesep_a0.20_gate0_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": -0.00441696113074205,
+      "ci95_lo": -0.022084805653710248,
+      "ci95_hi": 0.014134275618374558,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "tuned_4_ch1_sib1_ic1_roleunion_a0.30_gate0_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": -0.00530035335689046,
+      "ci95_lo": -0.022084805653710248,
+      "ci95_hi": 0.013250883392226149,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "tuned_5_ch0_sib1_ic1_rolenone_a0.30_gate1_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": 0.006183745583038869,
+      "ci95_lo": -0.0088339222614841,
+      "ci95_hi": 0.022968197879858657,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    }
+  },
+  "pooled_unseen": {
+    "n_train": 1005,
+    "n_test": 413,
+    "n_classes": 9,
+    "scores": {
+      "exact": {
+        "trial_mean_accuracy": 0.6202582728006457,
+        "field_mean_accuracy": 0.6201761562268121,
+        "cfg": null,
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 0.5,
+          "w_platform": 1.0,
+          "w_material": 0.5,
+          "w_route": 0.0
+        }
+      },
+      "paper_union": {
+        "trial_mean_accuracy": 0.6349878934624698,
+        "field_mean_accuracy": 0.6347377794837643,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": false,
+          "role_mode": "union",
+          "alpha_role": 0.3,
+          "gated_query": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 0.5,
+          "w_platform": 1.0,
+          "w_material": 0.5,
+          "w_route": 0.0
+        }
+      },
+      "gated_sep": {
+        "trial_mean_accuracy": 0.6349878934624698,
+        "field_mean_accuracy": 0.6347377794837643,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": false,
+          "role_mode": "sep",
+          "alpha_role": 0.3,
+          "gated_query": true
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 0.5,
+          "w_platform": 1.0,
+          "w_material": 0.5,
+          "w_route": 0.0
+        }
+      },
+      "gated_ic_sep": {
+        "trial_mean_accuracy": 0.6343825665859564,
+        "field_mean_accuracy": 0.6341324812055964,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": true,
+          "role_mode": "sep",
+          "alpha_role": 0.3,
+          "gated_query": true
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 0.5,
+          "w_platform": 1.0,
+          "w_material": 0.5,
+          "w_route": 0.0
+        }
+      },
+      "ic_sep": {
+        "trial_mean_accuracy": 0.6343825665859564,
+        "field_mean_accuracy": 0.6341324812055964,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": true,
+          "role_mode": "sep",
+          "alpha_role": 0.3,
+          "gated_query": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 0.5,
+          "w_platform": 1.0,
+          "w_material": 0.5,
+          "w_route": 0.0
+        }
+      },
+      "tuned_1_ch1_sib1_ic1_rolenone_a0.30_gate0": {
+        "trial_mean_accuracy": 0.6305488297013719,
+        "field_mean_accuracy": 0.6304946358369641,
+        "cfg": {
+          "children_depth": 1,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.25
+        }
+      },
+      "tuned_2_ch1_sib1_ic1_rolesep_a0.20_gate0": {
+        "trial_mean_accuracy": 0.6341807909604519,
+        "field_mean_accuracy": 0.6341354125359931,
+        "cfg": {
+          "children_depth": 1,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "sep",
+          "alpha_role": 0.2,
+          "gated_query": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.25
+        }
+      },
+      "tuned_3_ch1_sib1_ic1_rolesep_a0.20_gate0": {
+        "trial_mean_accuracy": 0.6341807909604519,
+        "field_mean_accuracy": 0.6341354125359931,
+        "cfg": {
+          "children_depth": 1,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "sep",
+          "alpha_role": 0.2,
+          "gated_query": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.25
+        }
+      },
+      "tuned_4_ch1_sib1_ic1_roleunion_a0.30_gate0": {
+        "trial_mean_accuracy": 0.6317594834543986,
+        "field_mean_accuracy": 0.6317082280699737,
+        "cfg": {
+          "children_depth": 1,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "union",
+          "alpha_role": 0.3,
+          "gated_query": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.25
+        }
+      },
+      "tuned_5_ch0_sib1_ic1_rolenone_a0.30_gate1": {
+        "trial_mean_accuracy": 0.6329701372074252,
+        "field_mean_accuracy": 0.632923289542975,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.25
+        }
+      }
+    },
+    "bootstrap_vs_exact": {
+      "paper_union_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014729620661824053,
+        "ci95_lo": 0.00443906376109766,
+        "ci95_hi": 0.025221953188054886,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "gated_sep_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014729620661824053,
+        "ci95_lo": 0.00443906376109766,
+        "ci95_hi": 0.025221953188054886,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "gated_ic_sep_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014124293785310736,
+        "ci95_lo": 0.0036319612590799033,
+        "ci95_hi": 0.025020177562550445,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "ic_sep_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014124293785310736,
+        "ci95_lo": 0.0036319612590799033,
+        "ci95_hi": 0.025020177562550445,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "tuned_1_ch1_sib1_ic1_rolenone_a0.30_gate0_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.010290556900726392,
+        "ci95_lo": 0.0,
+        "ci95_hi": 0.020581113801452784,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "tuned_2_ch1_sib1_ic1_rolesep_a0.20_gate0_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.013922518159806295,
+        "ci95_lo": 0.0036319612590799033,
+        "ci95_hi": 0.024213075060532687,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "tuned_3_ch1_sib1_ic1_rolesep_a0.20_gate0_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.013922518159806295,
+        "ci95_lo": 0.0036319612590799033,
+        "ci95_hi": 0.024213075060532687,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "tuned_4_ch1_sib1_ic1_roleunion_a0.30_gate0_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.011501210653753027,
+        "ci95_lo": 0.0018159806295399517,
+        "ci95_hi": 0.021791767554479417,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "tuned_5_ch0_sib1_ic1_rolenone_a0.30_gate1_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.012711864406779662,
+        "ci95_lo": 0.0,
+        "ci95_hi": 0.02602905569007264,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      }
+    }
+  },
+  "recommended": {
+    "name": "ic_sep",
+    "chrono_acc": 0.6625441696113075,
+    "pooled_trial_acc": 0.6343825665859564,
+    "chrono_delta": 0.004416961130742081,
+    "pooled_delta": 0.01412429378531066,
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "score": 0.01522853406799618
+  },
+  "story_recommended": {
+    "name": "gated_sep",
+    "chrono_acc": 0.6581272084805654,
+    "pooled_trial_acc": 0.6349878934624698,
+    "chrono_delta": 0.0,
+    "pooled_delta": 0.014729620661824039,
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "score": 0.014729620661824039
+  },
+  "ranking": [
+    {
+      "name": "ic_sep",
+      "chrono_acc": 0.6625441696113075,
+      "pooled_trial_acc": 0.6343825665859564,
+      "chrono_delta": 0.004416961130742081,
+      "pooled_delta": 0.01412429378531066,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "score": 0.01522853406799618
+    },
+    {
+      "name": "gated_sep",
+      "chrono_acc": 0.6581272084805654,
+      "pooled_trial_acc": 0.6349878934624698,
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.014729620661824039,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "score": 0.014729620661824039
+    },
+    {
+      "name": "paper_union",
+      "chrono_acc": 0.6563604240282686,
+      "pooled_trial_acc": 0.6349878934624698,
+      "chrono_delta": -0.0017667844522968323,
+      "pooled_delta": 0.014729620661824039,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "score": 0.01428792454874983
+    },
+    {
+      "name": "tuned_5_ch0_sib1_ic1_rolenone_a0.30_gate1",
+      "chrono_acc": 0.6643109540636043,
+      "pooled_trial_acc": 0.6329701372074252,
+      "chrono_delta": 0.006183745583038913,
+      "pooled_delta": 0.012711864406779516,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "score": 0.014257800802539244
+    },
+    {
+      "name": "gated_ic_sep",
+      "chrono_acc": 0.6581272084805654,
+      "pooled_trial_acc": 0.6343825665859564,
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.01412429378531066,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.3,
+        "gated_query": true
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 0.5,
+        "w_platform": 1.0,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "score": 0.01412429378531066
+    },
+    {
+      "name": "tuned_2_ch1_sib1_ic1_rolesep_a0.20_gate0",
+      "chrono_acc": 0.6537102473498233,
+      "pooled_trial_acc": 0.6341807909604519,
+      "chrono_delta": -0.004416961130742081,
+      "pooled_delta": 0.013922518159806163,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "score": 0.012818277877120643
+    },
+    {
+      "name": "tuned_3_ch1_sib1_ic1_rolesep_a0.20_gate0",
+      "chrono_acc": 0.6537102473498233,
+      "pooled_trial_acc": 0.6341807909604519,
+      "chrono_delta": -0.004416961130742081,
+      "pooled_delta": 0.013922518159806163,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "sep",
+        "alpha_role": 0.2,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "score": 0.012818277877120643
+    },
+    {
+      "name": "tuned_4_ch1_sib1_ic1_roleunion_a0.30_gate0",
+      "chrono_acc": 0.6528268551236749,
+      "pooled_trial_acc": 0.6317594834543986,
+      "chrono_delta": -0.005300353356890497,
+      "pooled_delta": 0.011501210653752869,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "score": 0.010176122314530245
+    },
+    {
+      "name": "tuned_1_ch1_sib1_ic1_rolenone_a0.30_gate0",
+      "chrono_acc": 0.6537102473498233,
+      "pooled_trial_acc": 0.6305488297013719,
+      "chrono_delta": -0.004416961130742081,
+      "pooled_delta": 0.010290556900726222,
+      "cfg": {
+        "children_depth": 1,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.25
+      },
+      "score": 0.009186316618040702
+    }
+  ]
+}

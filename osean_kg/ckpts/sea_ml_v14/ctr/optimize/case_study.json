@@ -1,0 +1,13 @@
+{
+  "nct_id": "NCT05584202",
+  "method": "hybrid_compgcn_128_a0.75_k10",
+  "matches": 2,
+  "n_vars": 4,
+  "inputs": {
+    "disease": "covid",
+    "arch_vo": "VO_0005198",
+    "vo_platform": "VO_0000186",
+    "phase": "PHASE2",
+    "primary_purpose": "PREVENTION"
+  }
+}

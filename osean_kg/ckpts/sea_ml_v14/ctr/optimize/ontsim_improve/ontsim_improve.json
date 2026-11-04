@@ -1,0 +1,200 @@
+{
+  "note": "Improved OntSim variants vs paper baseline. Paper numbers remain those from onto_graph_knn / graph_value.",
+  "sanity_pair_jaccard": {
+    "pair": [
+      "VO_0005198",
+      "VO_0004908"
+    ],
+    "paper_union_role": 0.5454545454545454,
+    "paper_subclass": 0.6666666666666666,
+    "sep_role": 0.6666666666666666,
+    "ic_sep": 0.46275692434692967
+  },
+  "chrono_setting_a": {
+    "exact": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.32056117449815
+    },
+    "ontsim_union_role_paper": {
+      "mean_accuracy": 0.6563604240282686,
+      "mean_macro_f1": 0.3256369563189934
+    },
+    "ontsim_subclass_paper": {
+      "mean_accuracy": 0.6563604240282686,
+      "mean_macro_f1": 0.3256369563189934
+    },
+    "ontsim_sep_role": {
+      "mean_accuracy": 0.6563604240282686,
+      "mean_macro_f1": 0.32558951830330735
+    },
+    "ontsim_ic": {
+      "mean_accuracy": 0.6625441696113075,
+      "mean_macro_f1": 0.325408474104686
+    },
+    "ontsim_ic_sep": {
+      "mean_accuracy": 0.6625441696113075,
+      "mean_macro_f1": 0.325408474104686
+    },
+    "ontsim_gated_sep": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.32056117449815
+    },
+    "ontsim_gated_ic_sep": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.32056117449815
+    },
+    "frequency_by_phase": {
+      "mean_accuracy": 0.63339222614841,
+      "mean_macro_f1": 0.25653758149688133
+    },
+    "hist_gbdt": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.3644477881220106
+    },
+    "logistic": {
+      "mean_accuracy": 0.6607773851590106,
+      "mean_macro_f1": 0.3377191912717605
+    }
+  },
+  "chrono_bootstrap_vs_exact": {
+    "ontsim_union_role_paper_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": -0.0017667844522968198,
+      "ci95_lo": -0.0176678445229682,
+      "ci95_hi": 0.013250883392226149,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "ontsim_sep_role_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": -0.0017667844522968198,
+      "ci95_lo": -0.0176678445229682,
+      "ci95_hi": 0.013250883392226149,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "ontsim_ic_sep_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": 0.00441696113074205,
+      "ci95_lo": -0.00530035335689046,
+      "ci95_hi": 0.014134275618374558,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "ontsim_gated_sep_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": 0.0,
+      "ci95_lo": 0.0,
+      "ci95_hi": 0.0,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    },
+    "ontsim_gated_ic_sep_minus_exact": {
+      "statistic": "trial_mean_accuracy",
+      "mean_diff_trial": 0.0,
+      "ci95_lo": 0.0,
+      "ci95_hi": 0.0,
+      "n_trials": 283,
+      "n_boot": 1500,
+      "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+    }
+  },
+  "pooled_unseen": {
+    "n_train": 1005,
+    "n_test": 413,
+    "n_classes": 9,
+    "scores": {
+      "exact": {
+        "trial_mean_accuracy": 0.6202582728006457,
+        "field_mean_accuracy": 0.6201761562268121
+      },
+      "ontsim_union_role_paper": {
+        "trial_mean_accuracy": 0.6349878934624698,
+        "field_mean_accuracy": 0.6347377794837643
+      },
+      "ontsim_subclass_paper": {
+        "trial_mean_accuracy": 0.6281275221953188,
+        "field_mean_accuracy": 0.628063022202211
+      },
+      "ontsim_sep_role": {
+        "trial_mean_accuracy": 0.6349878934624698,
+        "field_mean_accuracy": 0.6347377794837643
+      },
+      "ontsim_ic": {
+        "trial_mean_accuracy": 0.6343825665859564,
+        "field_mean_accuracy": 0.6341324812055964
+      },
+      "ontsim_ic_sep": {
+        "trial_mean_accuracy": 0.6343825665859564,
+        "field_mean_accuracy": 0.6341324812055964
+      },
+      "ontsim_gated_sep": {
+        "trial_mean_accuracy": 0.6349878934624698,
+        "field_mean_accuracy": 0.6347377794837643
+      },
+      "ontsim_gated_ic_sep": {
+        "trial_mean_accuracy": 0.6343825665859564,
+        "field_mean_accuracy": 0.6341324812055964
+      },
+      "frequency_by_phase": {
+        "trial_mean_accuracy": 0.6299435028248587,
+        "field_mean_accuracy": 0.629886377630054
+      },
+      "hist_gbdt": {
+        "trial_mean_accuracy": 0.6277239709443099,
+        "field_mean_accuracy": 0.627457681026525
+      }
+    },
+    "bootstrap_vs_exact": {
+      "ontsim_union_role_paper_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014729620661824053,
+        "ci95_lo": 0.00443906376109766,
+        "ci95_hi": 0.025221953188054886,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "ontsim_sep_role_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014729620661824053,
+        "ci95_lo": 0.00443906376109766,
+        "ci95_hi": 0.025221953188054886,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "ontsim_ic_sep_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014124293785310736,
+        "ci95_lo": 0.0036319612590799033,
+        "ci95_hi": 0.025020177562550445,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "ontsim_gated_sep_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014729620661824053,
+        "ci95_lo": 0.00443906376109766,
+        "ci95_hi": 0.025221953188054886,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      },
+      "ontsim_gated_ic_sep_minus_exact": {
+        "statistic": "trial_mean_accuracy",
+        "mean_diff_trial": 0.014124293785310736,
+        "ci95_lo": 0.0036319612590799033,
+        "ci95_hi": 0.025020177562550445,
+        "n_trials": 413,
+        "n_boot": 1500,
+        "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+      }
+    }
+  }
+}

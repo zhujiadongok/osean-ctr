@@ -1,0 +1,102 @@
+OSEAN CTDR — design variable recommendation
+SEA-CDM v1.4 + vo.owl | chrono split at 2022-01-01
+train=1135 test=283
+Targets never used as graph edges. Neighbors = train only.
+
+## frequency_by_phase
+n_test=283  mean_acc=0.633  mean_macro_f1=0.257
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.307  macroF1=0.102  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.456  macroF1=0.265  classes=4
+
+## logistic
+n_test=283  mean_acc=0.649  mean_macro_f1=0.325
+  allocation              acc=0.883  macroF1=0.497  classes=2
+  masking                 acc=0.350  macroF1=0.224  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.488  macroF1=0.391  classes=4
+
+## hist_gbdt
+n_test=283  mean_acc=0.651  mean_macro_f1=0.353
+  allocation              acc=0.880  macroF1=0.581  classes=2
+  masking                 acc=0.375  macroF1=0.241  classes=5
+  intervention_model      acc=0.862  macroF1=0.197  classes=5
+  enrollment_bucket       acc=0.488  macroF1=0.393  classes=4
+
+## ontology_knn_k5
+n_test=283  mean_acc=0.634  mean_macro_f1=0.319
+  allocation              acc=0.848  macroF1=0.501  classes=2
+  masking                 acc=0.336  macroF1=0.202  classes=5
+  intervention_model      acc=0.855  macroF1=0.154  classes=5
+  enrollment_bucket       acc=0.498  macroF1=0.418  classes=4
+
+## ontology_knn_k10
+n_test=283  mean_acc=0.658  mean_macro_f1=0.332
+  allocation              acc=0.866  macroF1=0.489  classes=2
+  masking                 acc=0.396  macroF1=0.254  classes=5
+  intervention_model      acc=0.876  macroF1=0.188  classes=5
+  enrollment_bucket       acc=0.495  macroF1=0.397  classes=4
+
+## ontology_knn_k20
+n_test=283  mean_acc=0.660  mean_macro_f1=0.314
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.371  macroF1=0.229  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.498  macroF1=0.368  classes=4
+
+## transe_knn_k5
+n_test=283  mean_acc=0.589  mean_macro_f1=0.304
+  allocation              acc=0.852  macroF1=0.539  classes=2
+  masking                 acc=0.279  macroF1=0.171  classes=5
+  intervention_model      acc=0.866  macroF1=0.186  classes=5
+  enrollment_bucket       acc=0.360  macroF1=0.320  classes=4
+
+## transe_knn_k10
+n_test=283  mean_acc=0.602  mean_macro_f1=0.301
+  allocation              acc=0.873  macroF1=0.537  classes=2
+  masking                 acc=0.304  macroF1=0.192  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.357  macroF1=0.288  classes=4
+
+## transe_knn_k20
+n_test=283  mean_acc=0.617  mean_macro_f1=0.281
+  allocation              acc=0.898  macroF1=0.505  classes=2
+  masking                 acc=0.311  macroF1=0.161  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.385  macroF1=0.270  classes=4
+
+## compgcn_knn_k5
+n_test=283  mean_acc=0.550  mean_macro_f1=0.227
+  allocation              acc=0.873  macroF1=0.516  classes=2
+  masking                 acc=0.279  macroF1=0.102  classes=5
+  intervention_model      acc=0.873  macroF1=0.156  classes=5
+  enrollment_bucket       acc=0.177  macroF1=0.134  classes=4
+
+## compgcn_knn_k10
+n_test=283  mean_acc=0.620  mean_macro_f1=0.252
+  allocation              acc=0.898  macroF1=0.505  classes=2
+  masking                 acc=0.283  macroF1=0.102  classes=5
+  intervention_model      acc=0.873  macroF1=0.186  classes=5
+  enrollment_bucket       acc=0.428  macroF1=0.215  classes=4
+
+## compgcn_knn_k20
+n_test=283  mean_acc=0.625  mean_macro_f1=0.252
+  allocation              acc=0.898  macroF1=0.505  classes=2
+  masking                 acc=0.297  macroF1=0.099  classes=5
+  intervention_model      acc=0.873  macroF1=0.186  classes=5
+  enrollment_bucket       acc=0.435  macroF1=0.216  classes=4
+
+## Leaderboard (by mean accuracy)
+  0.660  F1=0.314  ontology_knn_k20
+  0.658  F1=0.332  ontology_knn_k10
+  0.651  F1=0.353  hist_gbdt
+  0.649  F1=0.325  logistic
+  0.634  F1=0.319  ontology_knn_k5
+  0.633  F1=0.257  frequency_by_phase
+  0.625  F1=0.252  compgcn_knn_k20
+  0.620  F1=0.252  compgcn_knn_k10
+  0.617  F1=0.281  transe_knn_k20
+  0.602  F1=0.301  transe_knn_k10
+  0.589  F1=0.304  transe_knn_k5
+  0.550  F1=0.227  compgcn_knn_k5

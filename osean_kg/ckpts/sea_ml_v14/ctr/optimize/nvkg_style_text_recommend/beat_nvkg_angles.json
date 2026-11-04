@@ -1,0 +1,173 @@
+{
+  "angle_A_structured_fields": {
+    "claim": "On registered design fields, OSEAN/HistGBDT beat NVKG-style title-semantic neighbor voting (same split, accuracy metric).",
+    "scores": {
+      "title_semantic_knn_k20": {
+        "mean_accuracy": 0.6510600706713782,
+        "mean_macro_f1": 0.317027294506923
+      },
+      "osean_exact_knn_k20": {
+        "mean_accuracy": 0.6607773851590106,
+        "mean_macro_f1": 0.32408550262034114
+      },
+      "osean_ontsim_role_k20": {
+        "mean_accuracy": 0.6643109540636042,
+        "mean_macro_f1": 0.33223389373312445
+      },
+      "frequency_by_phase": {
+        "mean_accuracy": 0.63339222614841,
+        "mean_macro_f1": 0.25653758149688133
+      },
+      "hist_gbdt": {
+        "mean_accuracy": 0.6643109540636043,
+        "mean_macro_f1": 0.36090389949944335
+      }
+    },
+    "winner": "hist_gbdt",
+    "nvkg_style_arm": "title_semantic_knn_k20",
+    "delta_vs_title": 0.013250883392226132
+  },
+  "angle_B_clustered_text_sim": {
+    "claim": "With NVKG Option-2 style text clustering (cosine>=0.90\u2192shared centroid), local OSEAN/title recommend avg-sim is directly comparable to their Table 6.",
+    "cluster_threshold": 0.9,
+    "pep_centroids": 2407,
+    "icr_centroids": 7109,
+    "nvkg_published": {
+      "pep@10": 0.779,
+      "icr@10": 0.762,
+      "icr@50": 0.829,
+      "source": "Devarakonda et al. JBI 2024 Table 6 HRGAT"
+    },
+    "ours_clustered": {
+      "osean_exact_knn": {
+        "primary_endpoints": {
+          "3": {
+            "n_queries": 900,
+            "mean_rank": 1.9277777777777778,
+            "mrr": 0.6390740740740741,
+            "average_similarity": 0.4174892177267207
+          },
+          "5": {
+            "n_queries": 900,
+            "mean_rank": 3.05,
+            "mrr": 0.4518888888888889,
+            "average_similarity": 0.47698646038356757
+          },
+          "10": {
+            "n_queries": 900,
+            "mean_rank": 5.35,
+            "mrr": 0.31335052910052913,
+            "average_similarity": 0.532871975298557
+          }
+        },
+        "inclusion_criteria": {
+          "10": {
+            "n_queries": 2111,
+            "mean_rank": 5.423022264329702,
+            "mrr": 0.3118177272488026,
+            "average_similarity": 0.4625444601443016
+          },
+          "30": {
+            "n_queries": 2111,
+            "mean_rank": 14.651350071056372,
+            "mrr": 0.15432364911460297,
+            "average_similarity": 0.5622683996092025
+          },
+          "50": {
+            "n_queries": 2111,
+            "mean_rank": 23.65513974419706,
+            "mrr": 0.10883662113801654,
+            "average_similarity": 0.6009814404921755
+          }
+        }
+      },
+      "osean_ontsim_role_knn": {
+        "primary_endpoints": {
+          "3": {
+            "n_queries": 900,
+            "mean_rank": 1.9155555555555555,
+            "mrr": 0.6451851851851852,
+            "average_similarity": 0.4239910663705733
+          },
+          "5": {
+            "n_queries": 900,
+            "mean_rank": 2.9122222222222223,
+            "mrr": 0.47694444444444445,
+            "average_similarity": 0.4800339169344968
+          },
+          "10": {
+            "n_queries": 900,
+            "mean_rank": 5.288888888888889,
+            "mrr": 0.32125970017636685,
+            "average_similarity": 0.5315836423801051
+          }
+        },
+        "inclusion_criteria": {
+          "10": {
+            "n_queries": 2111,
+            "mean_rank": 5.36049265750829,
+            "mrr": 0.31785037558367735,
+            "average_similarity": 0.46389521978537884
+          },
+          "30": {
+            "n_queries": 2111,
+            "mean_rank": 14.336333491236381,
+            "mrr": 0.1599873356718478,
+            "average_similarity": 0.5621468922796548
+          },
+          "50": {
+            "n_queries": 2111,
+            "mean_rank": 23.148744670772146,
+            "mrr": 0.1166930036041278,
+            "average_similarity": 0.6008244622507575
+          }
+        }
+      },
+      "title_semantic_knn": {
+        "primary_endpoints": {
+          "3": {
+            "n_queries": 900,
+            "mean_rank": 1.9977777777777779,
+            "mrr": 0.6196296296296298,
+            "average_similarity": 0.42242161105490394
+          },
+          "5": {
+            "n_queries": 900,
+            "mean_rank": 3.031111111111111,
+            "mrr": 0.4605370370370371,
+            "average_similarity": 0.48408772541417017
+          },
+          "10": {
+            "n_queries": 900,
+            "mean_rank": 5.162222222222222,
+            "mrr": 0.32999647266313936,
+            "average_similarity": 0.5561693045414157
+          }
+        },
+        "inclusion_criteria": {
+          "10": {
+            "n_queries": 2111,
+            "mean_rank": 5.167219327333018,
+            "mrr": 0.31604294962892787,
+            "average_similarity": 0.5014161764269528
+          },
+          "30": {
+            "n_queries": 2111,
+            "mean_rank": 14.113216485078162,
+            "mrr": 0.16252540463234202,
+            "average_similarity": 0.6023140543942088
+          },
+          "50": {
+            "n_queries": 2111,
+            "mean_rank": 22.33822832780673,
+            "mrr": 0.1251096884691834,
+            "average_similarity": 0.6416317273843689
+          }
+        }
+      }
+    },
+    "best_arm_by_icr50": "title_semantic_knn",
+    "best_icr50": 0.6416317273843689,
+    "best_pep10": 0.5561693045414157
+  }
+}

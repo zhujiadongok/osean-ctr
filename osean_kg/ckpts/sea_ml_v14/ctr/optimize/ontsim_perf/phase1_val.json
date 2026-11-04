@@ -1,0 +1,314 @@
+[
+  {
+    "stage": "ont",
+    "key": "ch0_sib1_ic1_rolenone_a0.30_gate0_mjaccard_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "jaccard",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.5,
+      "w_platform": 1.5,
+      "w_material": 2.0,
+      "w_route": 0.25
+    },
+    "k": 30,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6700819672131147,
+    "mean_macro_f1": 0.35720493828629574
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib1_ic1_rolenone_a0.30_gate1_mjaccard_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true,
+      "metric": "jaccard",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 1.5,
+      "w_phase": 1.0,
+      "w_purpose": 1.5,
+      "w_platform": 2.0,
+      "w_material": 1.5,
+      "w_route": 0.25
+    },
+    "k": 30,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6700819672131147,
+    "mean_macro_f1": 0.344434964367676
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib1_ic0_rolesep_a0.30_gate0_mlin_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "lin",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 1.5,
+      "w_phase": 1.0,
+      "w_purpose": 1.5,
+      "w_platform": 0.5,
+      "w_material": 1.5,
+      "w_route": 0.0
+    },
+    "k": 50,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6670081967213115,
+    "mean_macro_f1": 0.3385338922368628
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib0_ic0_roleunion_a0.30_gate0_mjaccard_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "jaccard",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 1.0,
+      "w_material": 1.0,
+      "w_route": 0.25
+    },
+    "k": 40,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6659836065573772,
+    "mean_macro_f1": 0.3534122920484585
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib0_ic0_rolenone_a0.30_gate0_mlin_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "lin",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 2.0,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "k": 25,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6649590163934426,
+    "mean_macro_f1": 0.3515894478548707
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib1_ic0_rolenone_a0.30_gate0_mlin_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "lin",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 2.0,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "k": 25,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6649590163934426,
+    "mean_macro_f1": 0.3515894478548707
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib0_ic1_rolesep_a0.30_gate0_mjaccard_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "jaccard",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 1.5,
+      "w_material": 1.0,
+      "w_route": 0.25
+    },
+    "k": 25,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6639344262295083,
+    "mean_macro_f1": 0.35363735315684286
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib1_ic0_rolesep_a0.30_gate0_mresnik_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "resnik",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "k": 40,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6639344262295083,
+    "mean_macro_f1": 0.3521235467211534
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib0_ic0_rolesep_a0.30_gate0_mresnik_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "resnik",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "k": 40,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6639344262295083,
+    "mean_macro_f1": 0.3521235467211534
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib1_ic0_rolenone_a0.30_gate0_mresnik_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "resnik",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "k": 40,
+    "alpha": 1.0,
+    "mean_accuracy": 0.660860655737705,
+    "mean_macro_f1": 0.35190480442637906
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib0_ic0_rolenone_a0.30_gate0_mresnik_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false,
+      "metric": "resnik",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "k": 40,
+    "alpha": 1.0,
+    "mean_accuracy": 0.660860655737705,
+    "mean_macro_f1": 0.35190480442637906
+  },
+  {
+    "stage": "ont",
+    "key": "ch0_sib0_ic1_rolenone_a0.30_gate1_mjaccard_cfc0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true,
+      "metric": "jaccard",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 2.0,
+      "w_phase": 1.5,
+      "w_purpose": 1.5,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "k": 40,
+    "alpha": 1.0,
+    "mean_accuracy": 0.6588114754098361,
+    "mean_macro_f1": 0.3467292177154328
+  }
+]

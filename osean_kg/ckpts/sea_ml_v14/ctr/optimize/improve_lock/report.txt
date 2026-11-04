@@ -1,0 +1,28 @@
+CTDR IMPROVE LOCK
+locked=hist_gbdt
+val_acc=0.6557
+test_acc=0.6590
+gnn_involved=False
+
+## VAL TOP 15
+  0.6557  f1=0.3477  hist_gbdt
+  0.6486  f1=0.3184  d128_e700__triple_o0.5_e0.3_t0.2_k20
+  0.6475  f1=0.3274  d64_e400__triple_o0.5_e0.3_t0.2_k20
+  0.6465  f1=0.3232  ontology_knn_k20
+  0.6445  f1=0.3236  d128_e700__triple_o0.4_e0.4_t0.2_k20
+  0.6434  f1=0.3205  d128_e700__triple_o0.5_e0.4_t0.1_k20
+  0.6434  f1=0.3226  d64_e400__triple_o0.45_e0.4_t0.15_k20
+  0.6424  f1=0.3240  d128_e500__triple_o0.5_e0.3_t0.2_k20
+  0.6414  f1=0.3245  d128_e500__triple_o0.4_e0.4_t0.2_k20
+  0.6414  f1=0.3209  d128_e700__triple_o0.35_e0.45_t0.2_k20
+  0.6414  f1=0.3200  d64_e400__triple_o0.5_e0.4_t0.1_k20
+  0.6414  f1=0.3188  d128_e700__triple_o0.45_e0.4_t0.15_k20
+  0.6414  f1=0.3208  d64_e400__hybrid_v2_a0.65_k20
+  0.6404  f1=0.3260  d128_e500__triple_o0.35_e0.45_t0.2_k20
+  0.6404  f1=0.3223  d64_e400__hybrid_v2_a0.25_k20
+
+## TEST (scored methods)
+  0.6617  f1=0.3393  logistic
+  0.6599  f1=0.3139  ontology_knn_k20
+  0.6590  f1=0.3661  hist_gbdt
+  0.6334  f1=0.2565  frequency_by_phase

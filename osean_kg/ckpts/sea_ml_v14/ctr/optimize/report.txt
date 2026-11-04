@@ -1,0 +1,554 @@
+OSEAN CTDR OPTIMIZE
+split=2022-01-01 train=1135 test=283
+
+## frequency_by_phase
+n_test=283  mean_acc=0.507  mean_macro_f1=0.205
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.307  macroF1=0.102  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.456  macroF1=0.265  classes=4
+  primary_outcome_family  acc=0.000  macroF1=0.000  classes=3
+
+## logistic
+n_test=283  mean_acc=0.547  mean_macro_f1=0.286
+  allocation              acc=0.887  macroF1=0.525  classes=2
+  masking                 acc=0.389  macroF1=0.247  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.495  macroF1=0.398  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.071  classes=3
+
+## hist_gbdt
+n_test=283  mean_acc=0.563  mean_macro_f1=0.320
+  allocation              acc=0.887  macroF1=0.606  classes=2
+  masking                 acc=0.385  macroF1=0.247  classes=5
+  intervention_model      acc=0.866  macroF1=0.197  classes=5
+  enrollment_bucket       acc=0.498  macroF1=0.415  classes=4
+  primary_outcome_family  acc=0.176  macroF1=0.136  classes=3
+
+## ontology_knn_k5
+n_test=283  mean_acc=0.549  mean_macro_f1=0.286
+  allocation              acc=0.848  macroF1=0.501  classes=2
+  masking                 acc=0.336  macroF1=0.202  classes=5
+  intervention_model      acc=0.855  macroF1=0.154  classes=5
+  enrollment_bucket       acc=0.498  macroF1=0.418  classes=4
+  primary_outcome_family  acc=0.206  macroF1=0.157  classes=3
+
+## ontology_knn_k10
+n_test=283  mean_acc=0.568  mean_macro_f1=0.296
+  allocation              acc=0.866  macroF1=0.489  classes=2
+  masking                 acc=0.396  macroF1=0.254  classes=5
+  intervention_model      acc=0.876  macroF1=0.188  classes=5
+  enrollment_bucket       acc=0.495  macroF1=0.397  classes=4
+  primary_outcome_family  acc=0.206  macroF1=0.153  classes=3
+
+## ontology_knn_k15
+n_test=283  mean_acc=0.562  mean_macro_f1=0.289
+  allocation              acc=0.883  macroF1=0.497  classes=2
+  masking                 acc=0.357  macroF1=0.225  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.516  macroF1=0.403  classes=4
+  primary_outcome_family  acc=0.176  macroF1=0.131  classes=3
+
+## ontology_knn_k20
+n_test=283  mean_acc=0.557  mean_macro_f1=0.272
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.371  macroF1=0.229  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.498  macroF1=0.368  classes=4
+  primary_outcome_family  acc=0.147  macroF1=0.104  classes=3
+
+## transe64_ind_k5
+n_test=283  mean_acc=0.476  mean_macro_f1=0.233
+  allocation              acc=0.862  macroF1=0.487  classes=2
+  masking                 acc=0.314  macroF1=0.198  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.269  macroF1=0.239  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.053  classes=3
+
+## transe64_ind_k10
+n_test=283  mean_acc=0.505  mean_macro_f1=0.236
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.346  macroF1=0.187  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.322  macroF1=0.248  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.085  classes=3
+
+## transe64_ind_k15
+n_test=283  mean_acc=0.495  mean_macro_f1=0.217
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.350  macroF1=0.184  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.353  macroF1=0.243  classes=4
+  primary_outcome_family  acc=0.000  macroF1=0.000  classes=3
+
+## transe64_ind_k20
+n_test=283  mean_acc=0.498  mean_macro_f1=0.212
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.357  macroF1=0.174  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.364  macroF1=0.226  classes=4
+  primary_outcome_family  acc=0.000  macroF1=0.000  classes=3
+
+## hybrid_transe64_a0.25_k5
+n_test=283  mean_acc=0.553  mean_macro_f1=0.289
+  allocation              acc=0.855  macroF1=0.484  classes=2
+  masking                 acc=0.385  macroF1=0.268  classes=5
+  intervention_model      acc=0.873  macroF1=0.186  classes=5
+  enrollment_bucket       acc=0.385  macroF1=0.309  classes=4
+  primary_outcome_family  acc=0.265  macroF1=0.199  classes=3
+
+## hybrid_transe64_a0.25_k10
+n_test=283  mean_acc=0.529  mean_macro_f1=0.263
+  allocation              acc=0.866  macroF1=0.489  classes=2
+  masking                 acc=0.417  macroF1=0.235  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.399  macroF1=0.330  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.075  classes=3
+
+## hybrid_transe64_a0.25_k15
+n_test=283  mean_acc=0.531  mean_macro_f1=0.255
+  allocation              acc=0.890  macroF1=0.471  classes=2
+  masking                 acc=0.399  macroF1=0.231  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.431  macroF1=0.330  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.059  classes=3
+
+## hybrid_transe64_a0.25_k20
+n_test=283  mean_acc=0.531  mean_macro_f1=0.251
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.417  macroF1=0.235  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.438  macroF1=0.331  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.031  classes=3
+
+## hybrid_transe64_a0.5_k5
+n_test=283  mean_acc=0.552  mean_macro_f1=0.292
+  allocation              acc=0.855  macroF1=0.558  classes=2
+  masking                 acc=0.371  macroF1=0.239  classes=5
+  intervention_model      acc=0.869  macroF1=0.155  classes=5
+  enrollment_bucket       acc=0.428  macroF1=0.339  classes=4
+  primary_outcome_family  acc=0.235  macroF1=0.168  classes=3
+
+## hybrid_transe64_a0.5_k10
+n_test=283  mean_acc=0.553  mean_macro_f1=0.288
+  allocation              acc=0.869  macroF1=0.534  classes=2
+  masking                 acc=0.371  macroF1=0.225  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.473  macroF1=0.377  classes=4
+  primary_outcome_family  acc=0.176  macroF1=0.119  classes=3
+
+## hybrid_transe64_a0.5_k15
+n_test=283  mean_acc=0.550  mean_macro_f1=0.278
+  allocation              acc=0.883  macroF1=0.497  classes=2
+  masking                 acc=0.435  macroF1=0.266  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.466  macroF1=0.358  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.082  classes=3
+
+## hybrid_transe64_a0.5_k20
+n_test=283  mean_acc=0.548  mean_macro_f1=0.267
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.438  macroF1=0.261  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.473  macroF1=0.361  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.056  classes=3
+
+## hybrid_transe64_a0.75_k5
+n_test=283  mean_acc=0.548  mean_macro_f1=0.294
+  allocation              acc=0.852  macroF1=0.539  classes=2
+  masking                 acc=0.343  macroF1=0.224  classes=5
+  intervention_model      acc=0.866  macroF1=0.155  classes=5
+  enrollment_bucket       acc=0.473  macroF1=0.400  classes=4
+  primary_outcome_family  acc=0.206  macroF1=0.152  classes=3
+
+## hybrid_transe64_a0.75_k10
+n_test=283  mean_acc=0.562  mean_macro_f1=0.296
+  allocation              acc=0.859  macroF1=0.507  classes=2
+  masking                 acc=0.371  macroF1=0.239  classes=5
+  intervention_model      acc=0.876  macroF1=0.188  classes=5
+  enrollment_bucket       acc=0.470  macroF1=0.379  classes=4
+  primary_outcome_family  acc=0.235  macroF1=0.168  classes=3
+
+## hybrid_transe64_a0.75_k15
+n_test=283  mean_acc=0.561  mean_macro_f1=0.292
+  allocation              acc=0.873  macroF1=0.516  classes=2
+  masking                 acc=0.420  macroF1=0.264  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.488  macroF1=0.378  classes=4
+  primary_outcome_family  acc=0.147  macroF1=0.115  classes=3
+
+## hybrid_transe64_a0.75_k20
+n_test=283  mean_acc=0.551  mean_macro_f1=0.270
+  allocation              acc=0.890  macroF1=0.471  classes=2
+  masking                 acc=0.410  macroF1=0.248  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.491  macroF1=0.371  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.071  classes=3
+
+## compgcn64_ind_k10
+n_test=283  mean_acc=0.466  mean_macro_f1=0.199
+  allocation              acc=0.887  macroF1=0.470  classes=2
+  masking                 acc=0.297  macroF1=0.144  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.240  macroF1=0.165  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.028  classes=3
+
+## compgcn64_ind_k20
+n_test=283  mean_acc=0.484  mean_macro_f1=0.202
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.360  macroF1=0.175  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.290  macroF1=0.177  classes=4
+  primary_outcome_family  acc=0.000  macroF1=0.000  classes=3
+
+## hybrid_compgcn64_a0.5_k10
+n_test=283  mean_acc=0.538  mean_macro_f1=0.280
+  allocation              acc=0.880  macroF1=0.563  classes=2
+  masking                 acc=0.385  macroF1=0.225  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.488  macroF1=0.379  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.048  classes=3
+
+## hybrid_compgcn64_a0.5_k20
+n_test=283  mean_acc=0.539  mean_macro_f1=0.265
+  allocation              acc=0.890  macroF1=0.471  classes=2
+  masking                 acc=0.392  macroF1=0.236  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.449  macroF1=0.341  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.088  classes=3
+
+## hybrid_compgcn64_a0.75_k10
+n_test=283  mean_acc=0.569  mean_macro_f1=0.301
+  allocation              acc=0.887  macroF1=0.525  classes=2
+  masking                 acc=0.417  macroF1=0.253  classes=5
+  intervention_model      acc=0.876  macroF1=0.188  classes=5
+  enrollment_bucket       acc=0.488  macroF1=0.403  classes=4
+  primary_outcome_family  acc=0.176  macroF1=0.134  classes=3
+
+## hybrid_compgcn64_a0.75_k20
+n_test=283  mean_acc=0.554  mean_macro_f1=0.287
+  allocation              acc=0.898  macroF1=0.533  classes=2
+  masking                 acc=0.406  macroF1=0.241  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.470  macroF1=0.376  classes=4
+  primary_outcome_family  acc=0.118  macroF1=0.098  classes=3
+
+## transe128_ind_k5
+n_test=283  mean_acc=0.486  mean_macro_f1=0.252
+  allocation              acc=0.834  macroF1=0.527  classes=2
+  masking                 acc=0.346  macroF1=0.219  classes=5
+  intervention_model      acc=0.823  macroF1=0.151  classes=5
+  enrollment_bucket       acc=0.311  macroF1=0.267  classes=4
+  primary_outcome_family  acc=0.118  macroF1=0.093  classes=3
+
+## transe128_ind_k10
+n_test=283  mean_acc=0.495  mean_macro_f1=0.228
+  allocation              acc=0.887  macroF1=0.470  classes=2
+  masking                 acc=0.332  macroF1=0.195  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.350  macroF1=0.259  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.031  classes=3
+
+## transe128_ind_k15
+n_test=283  mean_acc=0.498  mean_macro_f1=0.224
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.353  macroF1=0.195  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.336  macroF1=0.236  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.029  classes=3
+
+## transe128_ind_k20
+n_test=283  mean_acc=0.498  mean_macro_f1=0.223
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.367  macroF1=0.212  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.325  macroF1=0.217  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.029  classes=3
+
+## hybrid_transe128_a0.25_k5
+n_test=283  mean_acc=0.541  mean_macro_f1=0.292
+  allocation              acc=0.862  macroF1=0.548  classes=2
+  masking                 acc=0.389  macroF1=0.257  classes=5
+  intervention_model      acc=0.859  macroF1=0.154  classes=5
+  enrollment_bucket       acc=0.449  macroF1=0.389  classes=4
+  primary_outcome_family  acc=0.147  macroF1=0.113  classes=3
+
+## hybrid_transe128_a0.25_k10
+n_test=283  mean_acc=0.536  mean_macro_f1=0.264
+  allocation              acc=0.883  macroF1=0.497  classes=2
+  masking                 acc=0.392  macroF1=0.245  classes=5
+  intervention_model      acc=0.873  macroF1=0.155  classes=5
+  enrollment_bucket       acc=0.473  macroF1=0.369  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.053  classes=3
+
+## hybrid_transe128_a0.25_k15
+n_test=283  mean_acc=0.527  mean_macro_f1=0.246
+  allocation              acc=0.890  macroF1=0.471  classes=2
+  masking                 acc=0.399  macroF1=0.253  classes=5
+  intervention_model      acc=0.873  macroF1=0.155  classes=5
+  enrollment_bucket       acc=0.442  macroF1=0.324  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.028  classes=3
+
+## hybrid_transe128_a0.25_k20
+n_test=283  mean_acc=0.531  mean_macro_f1=0.248
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.420  macroF1=0.264  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.435  macroF1=0.288  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.029  classes=3
+
+## hybrid_transe128_a0.5_k5
+n_test=283  mean_acc=0.570  mean_macro_f1=0.302
+  allocation              acc=0.855  macroF1=0.484  classes=2
+  masking                 acc=0.428  macroF1=0.293  classes=5
+  intervention_model      acc=0.855  macroF1=0.154  classes=5
+  enrollment_bucket       acc=0.477  macroF1=0.409  classes=4
+  primary_outcome_family  acc=0.235  macroF1=0.168  classes=3
+
+## hybrid_transe128_a0.5_k10
+n_test=283  mean_acc=0.546  mean_macro_f1=0.295
+  allocation              acc=0.873  macroF1=0.556  classes=2
+  masking                 acc=0.406  macroF1=0.263  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.488  macroF1=0.395  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.075  classes=3
+
+## hybrid_transe128_a0.5_k15
+n_test=283  mean_acc=0.535  mean_macro_f1=0.261
+  allocation              acc=0.883  macroF1=0.497  classes=2
+  masking                 acc=0.396  macroF1=0.243  classes=5
+  intervention_model      acc=0.873  macroF1=0.155  classes=5
+  enrollment_bucket       acc=0.466  macroF1=0.354  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.053  classes=3
+
+## hybrid_transe128_a0.5_k20
+n_test=283  mean_acc=0.539  mean_macro_f1=0.267
+  allocation              acc=0.890  macroF1=0.501  classes=2
+  masking                 acc=0.396  macroF1=0.248  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.473  macroF1=0.352  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.048  classes=3
+
+## hybrid_transe128_a0.75_k5
+n_test=283  mean_acc=0.569  mean_macro_f1=0.296
+  allocation              acc=0.859  macroF1=0.507  classes=2
+  masking                 acc=0.399  macroF1=0.228  classes=5
+  intervention_model      acc=0.852  macroF1=0.153  classes=5
+  enrollment_bucket       acc=0.498  macroF1=0.426  classes=4
+  primary_outcome_family  acc=0.235  macroF1=0.168  classes=3
+
+## hybrid_transe128_a0.75_k10
+n_test=283  mean_acc=0.559  mean_macro_f1=0.301
+  allocation              acc=0.862  macroF1=0.509  classes=2
+  masking                 acc=0.392  macroF1=0.277  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.516  macroF1=0.420  classes=4
+  primary_outcome_family  acc=0.147  macroF1=0.110  classes=3
+
+## hybrid_transe128_a0.75_k15
+n_test=283  mean_acc=0.533  mean_macro_f1=0.258
+  allocation              acc=0.869  macroF1=0.514  classes=2
+  masking                 acc=0.396  macroF1=0.207  classes=5
+  intervention_model      acc=0.869  macroF1=0.155  classes=5
+  enrollment_bucket       acc=0.473  macroF1=0.365  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.050  classes=3
+
+## hybrid_transe128_a0.75_k20
+n_test=283  mean_acc=0.534  mean_macro_f1=0.254
+  allocation              acc=0.890  macroF1=0.501  classes=2
+  masking                 acc=0.385  macroF1=0.195  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.459  macroF1=0.334  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.050  classes=3
+
+## compgcn128_ind_k10
+n_test=283  mean_acc=0.465  mean_macro_f1=0.205
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.290  macroF1=0.105  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.237  macroF1=0.223  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.038  classes=3
+
+## compgcn128_ind_k20
+n_test=283  mean_acc=0.452  mean_macro_f1=0.175
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.311  macroF1=0.095  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.177  macroF1=0.122  classes=4
+  primary_outcome_family  acc=0.000  macroF1=0.000  classes=3
+
+## hybrid_compgcn128_a0.5_k10
+n_test=283  mean_acc=0.564  mean_macro_f1=0.286
+  allocation              acc=0.887  macroF1=0.499  classes=2
+  masking                 acc=0.389  macroF1=0.227  classes=5
+  intervention_model      acc=0.873  macroF1=0.186  classes=5
+  enrollment_bucket       acc=0.466  macroF1=0.358  classes=4
+  primary_outcome_family  acc=0.206  macroF1=0.159  classes=3
+
+## hybrid_compgcn128_a0.5_k20
+n_test=283  mean_acc=0.539  mean_macro_f1=0.250
+  allocation              acc=0.894  macroF1=0.472  classes=2
+  masking                 acc=0.406  macroF1=0.211  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.488  macroF1=0.354  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.028  classes=3
+
+## hybrid_compgcn128_a0.75_k10
+n_test=283  mean_acc=0.561  mean_macro_f1=0.299
+  allocation              acc=0.898  macroF1=0.533  classes=2
+  masking                 acc=0.378  macroF1=0.233  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.534  macroF1=0.444  classes=4
+  primary_outcome_family  acc=0.118  macroF1=0.098  classes=3
+
+## hybrid_compgcn128_a0.75_k20
+n_test=283  mean_acc=0.547  mean_macro_f1=0.278
+  allocation              acc=0.894  macroF1=0.503  classes=2
+  masking                 acc=0.410  macroF1=0.247  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.498  macroF1=0.404  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.050  classes=3
+
+## ensemble_gbdt_ontk10_hybrid_transe128_a0.5_k5
+n_test=283  mean_acc=0.568  mean_macro_f1=0.295
+  allocation              acc=0.873  macroF1=0.492  classes=2
+  masking                 acc=0.435  macroF1=0.273  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.481  macroF1=0.395  classes=4
+  primary_outcome_family  acc=0.176  macroF1=0.127  classes=3
+
+## ensemble_lr_gbdt_ontk10
+n_test=283  mean_acc=0.566  mean_macro_f1=0.304
+  allocation              acc=0.887  macroF1=0.549  classes=2
+  masking                 acc=0.396  macroF1=0.243  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.495  macroF1=0.399  classes=4
+  primary_outcome_family  acc=0.176  macroF1=0.142  classes=3
+
+## Leaderboard
+  0.570  F1=0.302  hybrid_transe128_a0.5_k5
+  0.569  F1=0.301  hybrid_compgcn64_a0.75_k10
+  0.569  F1=0.296  hybrid_transe128_a0.75_k5
+  0.568  F1=0.295  ensemble_gbdt_ontk10_hybrid_transe128_a0.5_k5
+  0.568  F1=0.296  ontology_knn_k10
+  0.566  F1=0.304  ensemble_lr_gbdt_ontk10
+  0.564  F1=0.286  hybrid_compgcn128_a0.5_k10
+  0.563  F1=0.320  hist_gbdt
+  0.562  F1=0.296  hybrid_transe64_a0.75_k10
+  0.562  F1=0.289  ontology_knn_k15
+  0.561  F1=0.292  hybrid_transe64_a0.75_k15
+  0.561  F1=0.299  hybrid_compgcn128_a0.75_k10
+  0.559  F1=0.301  hybrid_transe128_a0.75_k10
+  0.557  F1=0.272  ontology_knn_k20
+  0.554  F1=0.287  hybrid_compgcn64_a0.75_k20
+  0.553  F1=0.288  hybrid_transe64_a0.5_k10
+  0.553  F1=0.289  hybrid_transe64_a0.25_k5
+  0.552  F1=0.292  hybrid_transe64_a0.5_k5
+  0.551  F1=0.270  hybrid_transe64_a0.75_k20
+  0.550  F1=0.278  hybrid_transe64_a0.5_k15
+
+## STRUCTURE-ONLY leaderboard (allocation/masking/model/enrollment)
+
+  0.671  F1=0.349  hybrid_compgcn128_a0.75_k10
+  0.670  F1=0.320  hybrid_transe64_a0.5_k20
+  0.670  F1=0.335  hybrid_compgcn128_a0.75_k20
+  0.667  F1=0.342  hybrid_compgcn64_a0.75_k10
+  0.667  F1=0.319  hybrid_transe64_a0.75_k20
+  0.666  F1=0.306  hybrid_compgcn128_a0.5_k20
+  0.666  F1=0.337  ensemble_gbdt_ontk10_hybrid_transe128_a0.5_k5
+  0.665  F1=0.327  hybrid_transe64_a0.5_k15
+  0.664  F1=0.336  hybrid_transe64_a0.75_k15
+  0.663  F1=0.345  ensemble_lr_gbdt_ontk10
+  0.663  F1=0.334  hybrid_compgcn64_a0.75_k20
+  0.662  F1=0.348  hybrid_transe128_a0.75_k10
+  0.662  F1=0.339  logistic
+  0.661  F1=0.350  hybrid_transe128_a0.5_k10
+  0.660  F1=0.314  ontology_knn_k20
+  0.659  F1=0.366  hist_gbdt
+  0.659  F1=0.322  hybrid_transe128_a0.5_k20
+  0.658  F1=0.332  ontology_knn_k10
+  0.658  F1=0.328  ontology_knn_k15
+  0.657  F1=0.339  hybrid_compgcn64_a0.5_k10
+
+## Text baselines (advisor B2/B3)
+
+## bm25_knn_k5
+n_test=283  mean_acc=0.537  mean_macro_f1=0.298
+  allocation              acc=0.859  macroF1=0.561  classes=2
+  masking                 acc=0.399  macroF1=0.298  classes=5
+  intervention_model      acc=0.852  macroF1=0.164  classes=5
+  enrollment_bucket       acc=0.428  macroF1=0.357  classes=4
+  primary_outcome_family  acc=0.147  macroF1=0.109  classes=3
+  structure_mean_acc=0.634 F1=0.345
+
+## tfidf_knn_k5
+n_test=283  mean_acc=0.517  mean_macro_f1=0.281
+  allocation              acc=0.845  macroF1=0.564  classes=2
+  masking                 acc=0.403  macroF1=0.304  classes=5
+  intervention_model      acc=0.855  macroF1=0.164  classes=5
+  enrollment_bucket       acc=0.392  macroF1=0.302  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.070  classes=3
+  structure_mean_acc=0.624 F1=0.334
+
+## bm25_knn_k10
+n_test=283  mean_acc=0.529  mean_macro_f1=0.281
+  allocation              acc=0.866  macroF1=0.550  classes=2
+  masking                 acc=0.392  macroF1=0.274  classes=5
+  intervention_model      acc=0.873  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.424  macroF1=0.325  classes=4
+  primary_outcome_family  acc=0.088  macroF1=0.068  classes=3
+  structure_mean_acc=0.639 F1=0.334
+
+## tfidf_knn_k10
+n_test=283  mean_acc=0.525  mean_macro_f1=0.277
+  allocation              acc=0.859  macroF1=0.545  classes=2
+  masking                 acc=0.420  macroF1=0.318  classes=5
+  intervention_model      acc=0.873  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.413  macroF1=0.289  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.047  classes=3
+  structure_mean_acc=0.641 F1=0.335
+
+## bm25_knn_k20
+n_test=283  mean_acc=0.525  mean_macro_f1=0.249
+  allocation              acc=0.894  macroF1=0.503  classes=2
+  masking                 acc=0.406  macroF1=0.235  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.417  macroF1=0.291  classes=4
+  primary_outcome_family  acc=0.029  macroF1=0.031  classes=3
+  structure_mean_acc=0.648 F1=0.304
+
+## tfidf_knn_k20
+n_test=283  mean_acc=0.533  mean_macro_f1=0.280
+  allocation              acc=0.908  macroF1=0.593  classes=2
+  masking                 acc=0.396  macroF1=0.261  classes=5
+  intervention_model      acc=0.876  macroF1=0.187  classes=5
+  enrollment_bucket       acc=0.428  macroF1=0.302  classes=4
+  primary_outcome_family  acc=0.059  macroF1=0.056  classes=3
+  structure_mean_acc=0.652 F1=0.336
+
+## STRUCTURE-ONLY leaderboard (with text baselines)
+  0.671  F1=0.349  hybrid_compgcn128_a0.75_k10
+  0.670  F1=0.320  hybrid_transe64_a0.5_k20
+  0.670  F1=0.335  hybrid_compgcn128_a0.75_k20
+  0.667  F1=0.342  hybrid_compgcn64_a0.75_k10
+  0.667  F1=0.319  hybrid_transe64_a0.75_k20
+  0.666  F1=0.306  hybrid_compgcn128_a0.5_k20
+  0.666  F1=0.337  ensemble_gbdt_ontk10_hybrid_transe128_a0.5_k5
+  0.665  F1=0.327  hybrid_transe64_a0.5_k15
+  0.664  F1=0.336  hybrid_transe64_a0.75_k15
+  0.663  F1=0.345  ensemble_lr_gbdt_ontk10
+  0.663  F1=0.334  hybrid_compgcn64_a0.75_k20
+  0.662  F1=0.348  hybrid_transe128_a0.75_k10
+  0.662  F1=0.339  logistic
+  0.661  F1=0.350  hybrid_transe128_a0.5_k10
+  0.660  F1=0.314  ontology_knn_k20
+  0.659  F1=0.366  hist_gbdt
+  0.659  F1=0.322  hybrid_transe128_a0.5_k20
+  0.658  F1=0.332  ontology_knn_k10
+  0.658  F1=0.328  ontology_knn_k15
+  0.657  F1=0.339  hybrid_compgcn64_a0.5_k10
+  0.656  F1=0.306  hybrid_transe64_a0.25_k20
+  0.656  F1=0.303  hybrid_transe128_a0.25_k20
+  0.655  F1=0.317  hybrid_transe128_a0.25_k10
+  0.655  F1=0.312  hybrid_transe128_a0.5_k15
+  0.654  F1=0.335  hybrid_transe128_a0.5_k5

@@ -1,0 +1,815 @@
+{
+  "rows": [
+    {
+      "name": "exact_k20",
+      "chrono": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled": 0.6202582728006457,
+      "ens_chrono": 0.6519434628975265,
+      "ens_pooled": 0.6184422921711058,
+      "cfg": null,
+      "weights": {
+        "w_disease": 1,
+        "w_phase": 1,
+        "w_purpose": 0.5,
+        "w_platform": 1,
+        "w_material": 0.5,
+        "w_route": 0
+      },
+      "k": 20,
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.0,
+      "ens_chrono_delta": -0.006183745583038913,
+      "ens_pooled_delta": -0.001815980629539915
+    },
+    {
+      "name": "paper_union_k20",
+      "chrono": 0.6563604240282686,
+      "chrono_f1": 0.3256369563189934,
+      "pooled": 0.6349878934624698,
+      "ens_chrono": 0.661660777385159,
+      "ens_pooled": 0.6301452784503632,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "union",
+        "alpha_role": 0.3,
+        "gated_query": false,
+        "metric": "jaccard",
+        "children_if_coarse": false
+      },
+      "weights": {
+        "w_disease": 1,
+        "w_phase": 1,
+        "w_purpose": 0.5,
+        "w_platform": 1,
+        "w_material": 0.5,
+        "w_route": 0
+      },
+      "k": 20,
+      "chrono_delta": -0.0017667844522968323,
+      "pooled_delta": 0.014729620661824039,
+      "ens_chrono_delta": 0.0035335689045936647,
+      "ens_pooled_delta": 0.00988700564971745
+    },
+    {
+      "name": "gated_ic_sib_k20",
+      "chrono": 0.6581272084805654,
+      "chrono_f1": 0.32056117449815,
+      "pooled": 0.6390234059725585,
+      "ens_chrono": 0.6519434628975265,
+      "ens_pooled": 0.632364810330912,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true,
+        "metric": "jaccard",
+        "children_if_coarse": false
+      },
+      "weights": {
+        "w_disease": 1,
+        "w_phase": 1,
+        "w_purpose": 0.5,
+        "w_platform": 1,
+        "w_material": 0.5,
+        "w_route": 0
+      },
+      "k": 20,
+      "chrono_delta": 0.0,
+      "pooled_delta": 0.01876513317191275,
+      "ens_chrono_delta": -0.006183745583038913,
+      "ens_pooled_delta": 0.012106537530266248
+    },
+    {
+      "name": "ont_ic_sib_ungated_tuned",
+      "chrono": 0.6466431095406361,
+      "chrono_f1": 0.32426307181346836,
+      "pooled": 0.6414447134786117,
+      "ens_chrono": 0.6598939929328622,
+      "ens_pooled": 0.6335754640839386,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": false,
+        "metric": "jaccard",
+        "children_if_coarse": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.5,
+        "w_platform": 1.5,
+        "w_material": 1.0,
+        "w_route": 0.25
+      },
+      "k": 25,
+      "chrono_delta": -0.0114840989399293,
+      "pooled_delta": 0.021186440677965934,
+      "ens_chrono_delta": 0.0017667844522968323,
+      "ens_pooled_delta": 0.013317191283292895
+    },
+    {
+      "name": "ont_gated_ic_sib_tuned",
+      "chrono": 0.6669611307420495,
+      "chrono_f1": 0.33385588200609884,
+      "pooled": 0.6341807909604519,
+      "ens_chrono": 0.666077738515901,
+      "ens_pooled": 0.6341807909604519,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true,
+        "metric": "jaccard",
+        "children_if_coarse": false
+      },
+      "weights": {
+        "w_disease": 1.5,
+        "w_phase": 1.0,
+        "w_purpose": 1.5,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "k": 30,
+      "chrono_delta": 0.008833922261484162,
+      "pooled_delta": 0.013922518159806163,
+      "ens_chrono_delta": 0.007950530035335635,
+      "ens_pooled_delta": 0.013922518159806163
+    },
+    {
+      "name": "ont_gated_resnik",
+      "chrono": 0.6704946996466431,
+      "chrono_f1": 0.33189335483794896,
+      "pooled": 0.6319612590799032,
+      "ens_chrono": 0.6696113074204947,
+      "ens_pooled": 0.6313559322033898,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": false,
+        "use_ic": false,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true,
+        "metric": "resnik",
+        "children_if_coarse": false
+      },
+      "weights": {
+        "w_disease": 2.0,
+        "w_phase": 1.5,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "k": 30,
+      "chrono_delta": 0.012367491166077715,
+      "pooled_delta": 0.011702986279257477,
+      "ens_chrono_delta": 0.0114840989399293,
+      "ens_pooled_delta": 0.011097659402744098
+    },
+    {
+      "name": "ont_gated_ic_sib_w_purpose1_plat05",
+      "chrono": 0.6696113074204948,
+      "chrono_f1": 0.3456820305657634,
+      "pooled": 0.6384180790960451,
+      "ens_chrono": 0.6607773851590106,
+      "ens_pooled": 0.6317594834543988,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true,
+        "metric": "jaccard",
+        "children_if_coarse": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "k": 20,
+      "chrono_delta": 0.01148409893992941,
+      "pooled_delta": 0.018159806295399372,
+      "ens_chrono_delta": 0.0026501766784452485,
+      "ens_pooled_delta": 0.011501210653753091
+    }
+  ],
+  "ranking": [
+    {
+      "name": "ont_gated_ic_sib_w_purpose1_plat05",
+      "chrono": 0.6696113074204948,
+      "pooled": 0.6384180790960451,
+      "score": 0.02510395366147894,
+      "mode": "pure",
+      "meta": {
+        "name": "ont_gated_ic_sib_w_purpose1_plat05",
+        "chrono": 0.6696113074204948,
+        "chrono_f1": 0.3456820305657634,
+        "pooled": 0.6384180790960451,
+        "ens_chrono": 0.6607773851590106,
+        "ens_pooled": 0.6317594834543988,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.0
+        },
+        "k": 20,
+        "chrono_delta": 0.01148409893992941,
+        "pooled_delta": 0.018159806295399372,
+        "ens_chrono_delta": 0.0026501766784452485,
+        "ens_pooled_delta": 0.011501210653753091
+      }
+    },
+    {
+      "name": "ont_gated_resnik",
+      "chrono": 0.6704946996466431,
+      "pooled": 0.6319612590799032,
+      "score": 0.021144730875520823,
+      "mode": "pure",
+      "meta": {
+        "name": "ont_gated_resnik",
+        "chrono": 0.6704946996466431,
+        "chrono_f1": 0.33189335483794896,
+        "pooled": 0.6319612590799032,
+        "ens_chrono": 0.6696113074204947,
+        "ens_pooled": 0.6313559322033898,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": false,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "resnik",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 2.0,
+          "w_phase": 1.5,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.0
+        },
+        "k": 30,
+        "chrono_delta": 0.012367491166077715,
+        "pooled_delta": 0.011702986279257477,
+        "ens_chrono_delta": 0.0114840989399293,
+        "ens_pooled_delta": 0.011097659402744098
+      }
+    },
+    {
+      "name": "ont_gated_resnik+gbdt50",
+      "chrono": 0.6696113074204947,
+      "pooled": 0.6313559322033898,
+      "score": 0.019807343491987373,
+      "mode": "ens",
+      "meta": {
+        "name": "ont_gated_resnik",
+        "chrono": 0.6704946996466431,
+        "chrono_f1": 0.33189335483794896,
+        "pooled": 0.6319612590799032,
+        "ens_chrono": 0.6696113074204947,
+        "ens_pooled": 0.6313559322033898,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": false,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "resnik",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 2.0,
+          "w_phase": 1.5,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.0
+        },
+        "k": 30,
+        "chrono_delta": 0.012367491166077715,
+        "pooled_delta": 0.011702986279257477,
+        "ens_chrono_delta": 0.0114840989399293,
+        "ens_pooled_delta": 0.011097659402744098
+      }
+    },
+    {
+      "name": "ont_gated_ic_sib_tuned",
+      "chrono": 0.6669611307420495,
+      "pooled": 0.6341807909604519,
+      "score": 0.019275810881338784,
+      "mode": "pure",
+      "meta": {
+        "name": "ont_gated_ic_sib_tuned",
+        "chrono": 0.6669611307420495,
+        "chrono_f1": 0.33385588200609884,
+        "pooled": 0.6341807909604519,
+        "ens_chrono": 0.666077738515901,
+        "ens_pooled": 0.6341807909604519,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1.5,
+          "w_phase": 1.0,
+          "w_purpose": 1.5,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.0
+        },
+        "k": 30,
+        "chrono_delta": 0.008833922261484162,
+        "pooled_delta": 0.013922518159806163,
+        "ens_chrono_delta": 0.007950530035335635,
+        "ens_pooled_delta": 0.013922518159806163
+      }
+    },
+    {
+      "name": "ont_gated_ic_sib_tuned+gbdt50",
+      "chrono": 0.666077738515901,
+      "pooled": 0.6341807909604519,
+      "score": 0.018392418655190257,
+      "mode": "ens",
+      "meta": {
+        "name": "ont_gated_ic_sib_tuned",
+        "chrono": 0.6669611307420495,
+        "chrono_f1": 0.33385588200609884,
+        "pooled": 0.6341807909604519,
+        "ens_chrono": 0.666077738515901,
+        "ens_pooled": 0.6341807909604519,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1.5,
+          "w_phase": 1.0,
+          "w_purpose": 1.5,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.0
+        },
+        "k": 30,
+        "chrono_delta": 0.008833922261484162,
+        "pooled_delta": 0.013922518159806163,
+        "ens_chrono_delta": 0.007950530035335635,
+        "ens_pooled_delta": 0.013922518159806163
+      }
+    },
+    {
+      "name": "gated_ic_sib_k20",
+      "chrono": 0.6581272084805654,
+      "pooled": 0.6390234059725585,
+      "score": 0.014073849878934563,
+      "mode": "pure",
+      "meta": {
+        "name": "gated_ic_sib_k20",
+        "chrono": 0.6581272084805654,
+        "chrono_f1": 0.32056117449815,
+        "pooled": 0.6390234059725585,
+        "ens_chrono": 0.6519434628975265,
+        "ens_pooled": 0.632364810330912,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1,
+          "w_phase": 1,
+          "w_purpose": 0.5,
+          "w_platform": 1,
+          "w_material": 0.5,
+          "w_route": 0
+        },
+        "k": 20,
+        "chrono_delta": 0.0,
+        "pooled_delta": 0.01876513317191275,
+        "ens_chrono_delta": -0.006183745583038913,
+        "ens_pooled_delta": 0.012106537530266248
+      }
+    },
+    {
+      "name": "ont_ic_sib_ungated_tuned+gbdt50",
+      "chrono": 0.6598939929328622,
+      "pooled": 0.6335754640839386,
+      "score": 0.011754677914766504,
+      "mode": "ens",
+      "meta": {
+        "name": "ont_ic_sib_ungated_tuned",
+        "chrono": 0.6466431095406361,
+        "chrono_f1": 0.32426307181346836,
+        "pooled": 0.6414447134786117,
+        "ens_chrono": 0.6598939929328622,
+        "ens_pooled": 0.6335754640839386,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": false,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.5,
+          "w_platform": 1.5,
+          "w_material": 1.0,
+          "w_route": 0.25
+        },
+        "k": 25,
+        "chrono_delta": -0.0114840989399293,
+        "pooled_delta": 0.021186440677965934,
+        "ens_chrono_delta": 0.0017667844522968323,
+        "ens_pooled_delta": 0.013317191283292895
+      }
+    },
+    {
+      "name": "ont_gated_ic_sib_w_purpose1_plat05+gbdt50",
+      "chrono": 0.6607773851590106,
+      "pooled": 0.6317594834543988,
+      "score": 0.011276084668760067,
+      "mode": "ens",
+      "meta": {
+        "name": "ont_gated_ic_sib_w_purpose1_plat05",
+        "chrono": 0.6696113074204948,
+        "chrono_f1": 0.3456820305657634,
+        "pooled": 0.6384180790960451,
+        "ens_chrono": 0.6607773851590106,
+        "ens_pooled": 0.6317594834543988,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.0,
+          "w_platform": 0.5,
+          "w_material": 0.5,
+          "w_route": 0.0
+        },
+        "k": 20,
+        "chrono_delta": 0.01148409893992941,
+        "pooled_delta": 0.018159806295399372,
+        "ens_chrono_delta": 0.0026501766784452485,
+        "ens_pooled_delta": 0.011501210653753091
+      }
+    },
+    {
+      "name": "paper_union_k20+gbdt50",
+      "chrono": 0.661660777385159,
+      "pooled": 0.6301452784503632,
+      "score": 0.010948823141881753,
+      "mode": "ens",
+      "meta": {
+        "name": "paper_union_k20",
+        "chrono": 0.6563604240282686,
+        "chrono_f1": 0.3256369563189934,
+        "pooled": 0.6349878934624698,
+        "ens_chrono": 0.661660777385159,
+        "ens_pooled": 0.6301452784503632,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": false,
+          "role_mode": "union",
+          "alpha_role": 0.3,
+          "gated_query": false,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1,
+          "w_phase": 1,
+          "w_purpose": 0.5,
+          "w_platform": 1,
+          "w_material": 0.5,
+          "w_route": 0
+        },
+        "k": 20,
+        "chrono_delta": -0.0017667844522968323,
+        "pooled_delta": 0.014729620661824039,
+        "ens_chrono_delta": 0.0035335689045936647,
+        "ens_pooled_delta": 0.00988700564971745
+      }
+    },
+    {
+      "name": "paper_union_k20",
+      "chrono": 0.6563604240282686,
+      "pooled": 0.6349878934624698,
+      "score": 0.009280431044071197,
+      "mode": "pure",
+      "meta": {
+        "name": "paper_union_k20",
+        "chrono": 0.6563604240282686,
+        "chrono_f1": 0.3256369563189934,
+        "pooled": 0.6349878934624698,
+        "ens_chrono": 0.661660777385159,
+        "ens_pooled": 0.6301452784503632,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": false,
+          "use_ic": false,
+          "role_mode": "union",
+          "alpha_role": 0.3,
+          "gated_query": false,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1,
+          "w_phase": 1,
+          "w_purpose": 0.5,
+          "w_platform": 1,
+          "w_material": 0.5,
+          "w_route": 0
+        },
+        "k": 20,
+        "chrono_delta": -0.0017667844522968323,
+        "pooled_delta": 0.014729620661824039,
+        "ens_chrono_delta": 0.0035335689045936647,
+        "ens_pooled_delta": 0.00988700564971745
+      }
+    },
+    {
+      "name": "ont_ic_sib_ungated_tuned",
+      "chrono": 0.6466431095406361,
+      "pooled": 0.6414447134786117,
+      "score": 0.0044057315685451515,
+      "mode": "pure",
+      "meta": {
+        "name": "ont_ic_sib_ungated_tuned",
+        "chrono": 0.6466431095406361,
+        "chrono_f1": 0.32426307181346836,
+        "pooled": 0.6414447134786117,
+        "ens_chrono": 0.6598939929328622,
+        "ens_pooled": 0.6335754640839386,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": false,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1.0,
+          "w_phase": 1.0,
+          "w_purpose": 1.5,
+          "w_platform": 1.5,
+          "w_material": 1.0,
+          "w_route": 0.25
+        },
+        "k": 25,
+        "chrono_delta": -0.0114840989399293,
+        "pooled_delta": 0.021186440677965934,
+        "ens_chrono_delta": 0.0017667844522968323,
+        "ens_pooled_delta": 0.013317191283292895
+      }
+    },
+    {
+      "name": "gated_ic_sib_k20+gbdt50",
+      "chrono": 0.6519434628975265,
+      "pooled": 0.632364810330912,
+      "score": 0.002896157564660773,
+      "mode": "ens",
+      "meta": {
+        "name": "gated_ic_sib_k20",
+        "chrono": 0.6581272084805654,
+        "chrono_f1": 0.32056117449815,
+        "pooled": 0.6390234059725585,
+        "ens_chrono": 0.6519434628975265,
+        "ens_pooled": 0.632364810330912,
+        "cfg": {
+          "children_depth": 0,
+          "use_siblings": true,
+          "use_ic": true,
+          "role_mode": "none",
+          "alpha_role": 0.3,
+          "gated_query": true,
+          "metric": "jaccard",
+          "children_if_coarse": false
+        },
+        "weights": {
+          "w_disease": 1,
+          "w_phase": 1,
+          "w_purpose": 0.5,
+          "w_platform": 1,
+          "w_material": 0.5,
+          "w_route": 0
+        },
+        "k": 20,
+        "chrono_delta": 0.0,
+        "pooled_delta": 0.01876513317191275,
+        "ens_chrono_delta": -0.006183745583038913,
+        "ens_pooled_delta": 0.012106537530266248
+      }
+    },
+    {
+      "name": "exact_k20",
+      "chrono": 0.6581272084805654,
+      "pooled": 0.6202582728006457,
+      "score": 0.0,
+      "mode": "pure",
+      "meta": {
+        "name": "exact_k20",
+        "chrono": 0.6581272084805654,
+        "chrono_f1": 0.32056117449815,
+        "pooled": 0.6202582728006457,
+        "ens_chrono": 0.6519434628975265,
+        "ens_pooled": 0.6184422921711058,
+        "cfg": null,
+        "weights": {
+          "w_disease": 1,
+          "w_phase": 1,
+          "w_purpose": 0.5,
+          "w_platform": 1,
+          "w_material": 0.5,
+          "w_route": 0
+        },
+        "k": 20,
+        "chrono_delta": 0.0,
+        "pooled_delta": 0.0,
+        "ens_chrono_delta": -0.006183745583038913,
+        "ens_pooled_delta": -0.001815980629539915
+      }
+    },
+    {
+      "name": "exact_k20+gbdt50",
+      "chrono": 0.6519434628975265,
+      "pooled": 0.6184422921711058,
+      "score": -0.0075457310551938495,
+      "mode": "ens",
+      "meta": {
+        "name": "exact_k20",
+        "chrono": 0.6581272084805654,
+        "chrono_f1": 0.32056117449815,
+        "pooled": 0.6202582728006457,
+        "ens_chrono": 0.6519434628975265,
+        "ens_pooled": 0.6184422921711058,
+        "cfg": null,
+        "weights": {
+          "w_disease": 1,
+          "w_phase": 1,
+          "w_purpose": 0.5,
+          "w_platform": 1,
+          "w_material": 0.5,
+          "w_route": 0
+        },
+        "k": 20,
+        "chrono_delta": 0.0,
+        "pooled_delta": 0.0,
+        "ens_chrono_delta": -0.006183745583038913,
+        "ens_pooled_delta": -0.001815980629539915
+      }
+    }
+  ],
+  "best": {
+    "name": "ont_gated_ic_sib_w_purpose1_plat05",
+    "chrono": 0.6696113074204948,
+    "pooled": 0.6384180790960451,
+    "score": 0.02510395366147894,
+    "mode": "pure",
+    "meta": {
+      "name": "ont_gated_ic_sib_w_purpose1_plat05",
+      "chrono": 0.6696113074204948,
+      "chrono_f1": 0.3456820305657634,
+      "pooled": 0.6384180790960451,
+      "ens_chrono": 0.6607773851590106,
+      "ens_pooled": 0.6317594834543988,
+      "cfg": {
+        "children_depth": 0,
+        "use_siblings": true,
+        "use_ic": true,
+        "role_mode": "none",
+        "alpha_role": 0.3,
+        "gated_query": true,
+        "metric": "jaccard",
+        "children_if_coarse": false
+      },
+      "weights": {
+        "w_disease": 1.0,
+        "w_phase": 1.0,
+        "w_purpose": 1.0,
+        "w_platform": 0.5,
+        "w_material": 0.5,
+        "w_route": 0.0
+      },
+      "k": 20,
+      "chrono_delta": 0.01148409893992941,
+      "pooled_delta": 0.018159806295399372,
+      "ens_chrono_delta": 0.0026501766784452485,
+      "ens_pooled_delta": 0.011501210653753091
+    }
+  },
+  "bootstrap_best_pure_chrono": {
+    "statistic": "trial_mean_accuracy",
+    "mean_diff_trial": 0.011484098939929329,
+    "ci95_lo": -0.0017667844522968198,
+    "ci95_hi": 0.024734982332155476,
+    "n_trials": 283,
+    "n_boot": 1500,
+    "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+  },
+  "best_pure": {
+    "name": "ont_gated_ic_sib_w_purpose1_plat05",
+    "chrono": 0.6696113074204948,
+    "chrono_f1": 0.3456820305657634,
+    "pooled": 0.6384180790960451,
+    "ens_chrono": 0.6607773851590106,
+    "ens_pooled": 0.6317594834543988,
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true,
+      "metric": "jaccard",
+      "children_if_coarse": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "k": 20,
+    "chrono_delta": 0.01148409893992941,
+    "pooled_delta": 0.018159806295399372,
+    "ens_chrono_delta": 0.0026501766784452485,
+    "ens_pooled_delta": 0.011501210653753091
+  },
+  "bootstrap_best_pure_pooled": {
+    "statistic": "trial_mean_accuracy",
+    "mean_diff_trial": 0.018159806295399514,
+    "ci95_lo": 0.006053268765133172,
+    "ci95_hi": 0.030871670702179176,
+    "n_trials": 413,
+    "n_boot": 1500,
+    "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+  }
+}

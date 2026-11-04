@@ -1,0 +1,590 @@
+{
+  "protocol": {
+    "fit": "start < 2019-01-01",
+    "val": "2019-01-01 <= start < 2022-01-01",
+    "test": "start >= 2022-01-01",
+    "n_fit": 891,
+    "n_val": 244,
+    "n_test": 283,
+    "selection": "max structure mean accuracy on val; ties broken by macro-F1",
+    "test_used_for_selection": false
+  },
+  "val_scores": {
+    "frequency_by_phase": {
+      "mean_accuracy": 0.6014344262295083,
+      "mean_macro_f1": 0.2619313863665689,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8524590163934426,
+          "macro_f1": 0.46017699115044247,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.28688524590163933,
+          "macro_f1": 0.0915032679738562,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.8729508196721312,
+          "macro_f1": 0.1864332603938731,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.39344262295081966,
+          "macro_f1": 0.3096120259481038,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    },
+    "logistic": {
+      "mean_accuracy": 0.6372950819672131,
+      "mean_macro_f1": 0.34577063971579153,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.860655737704918,
+          "macro_f1": 0.5753480753480753,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.319672131147541,
+          "macro_f1": 0.18687363834422657,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.8729508196721312,
+          "macro_f1": 0.1864332603938731,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4959016393442623,
+          "macro_f1": 0.43442758477699117,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    },
+    "logistic_balanced": {
+      "mean_accuracy": 0.5010245901639344,
+      "mean_macro_f1": 0.3187037639628285,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.7008196721311475,
+          "macro_f1": 0.5743541950438502,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.3360655737704918,
+          "macro_f1": 0.22184843745062724,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.5368852459016393,
+          "macro_f1": 0.1617835640003128,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.430327868852459,
+          "macro_f1": 0.31682885935652394,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    },
+    "hist_gbdt": {
+      "mean_accuracy": 0.6557377049180328,
+      "mean_macro_f1": 0.347682922737664,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8483606557377049,
+          "macro_f1": 0.484438353035235,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.3483606557377049,
+          "macro_f1": 0.21464173574468692,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.860655737704918,
+          "macro_f1": 0.16962305986696233,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.5655737704918032,
+          "macro_f1": 0.5220285423037716,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    },
+    "hist_gbdt_balanced": {
+      "mean_accuracy": 0.49385245901639346,
+      "mean_macro_f1": 0.309351040328205,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.6680327868852459,
+          "macro_f1": 0.5597728032074841,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.2540983606557377,
+          "macro_f1": 0.18883026974915798,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.5860655737704918,
+          "macro_f1": 0.14074844074844076,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4672131147540984,
+          "macro_f1": 0.34805264760773713,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    },
+    "ontology_knn_k10": {
+      "mean_accuracy": 0.625,
+      "mean_macro_f1": 0.32739104980710176,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.860655737704918,
+          "macro_f1": 0.5370535714285715,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.2827868852459016,
+          "macro_f1": 0.162313890127518,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.8688524590163934,
+          "macro_f1": 0.18596491228070175,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.48770491803278687,
+          "macro_f1": 0.42423182539161597,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    },
+    "ontology_knn_k20": {
+      "mean_accuracy": 0.646516393442623,
+      "mean_macro_f1": 0.32322446328828125,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8524590163934426,
+          "macro_f1": 0.46017699115044247,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.3401639344262295,
+          "macro_f1": 0.18765114042148742,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.8729508196721312,
+          "macro_f1": 0.1864332603938731,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.5204918032786885,
+          "macro_f1": 0.45863646118732193,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    },
+    "hybrid_compgcn128_a0.75_k10": {
+      "mean_accuracy": 0.6239754098360656,
+      "mean_macro_f1": 0.34825621792659167,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8401639344262295,
+          "macro_f1": 0.5576216819301753,
+          "n_classes_gold": 2,
+          "n_eval": 244
+        },
+        "masking": {
+          "accuracy": 0.29098360655737704,
+          "macro_f1": 0.1773252553824674,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "intervention_model": {
+          "accuracy": 0.8688524590163934,
+          "macro_f1": 0.18596491228070175,
+          "n_classes_gold": 5,
+          "n_eval": 244
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4959016393442623,
+          "macro_f1": 0.47211302211302214,
+          "n_classes_gold": 4,
+          "n_eval": 244
+        }
+      }
+    }
+  },
+  "locked_single": "hist_gbdt",
+  "locked_per_target": {
+    "allocation": "logistic",
+    "masking": "hist_gbdt",
+    "intervention_model": "frequency_by_phase",
+    "enrollment_bucket": "hist_gbdt"
+  },
+  "test_scores": {
+    "frequency_by_phase": {
+      "mean_accuracy": 0.63339222614841,
+      "mean_macro_f1": 0.25653758149688133,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8939929328621908,
+          "macro_f1": 0.47201492537313433,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking": {
+          "accuracy": 0.30742049469964666,
+          "macro_f1": 0.10182717715185248,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.4558303886925795,
+          "macro_f1": 0.26549089766216183,
+          "n_classes_gold": 4,
+          "n_eval": 283
+        }
+      }
+    },
+    "logistic": {
+      "mean_accuracy": 0.661660777385159,
+      "mean_macro_f1": 0.33925396288492293,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8869257950530035,
+          "macro_f1": 0.5253668763102726,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking": {
+          "accuracy": 0.38869257950530034,
+          "macro_f1": 0.24657135265952337,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49469964664310956,
+          "macro_f1": 0.39826029676951935,
+          "n_classes_gold": 4,
+          "n_eval": 283
+        }
+      }
+    },
+    "logistic_balanced": {
+      "mean_accuracy": 0.48586572438162545,
+      "mean_macro_f1": 0.304520805715647,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.6466431095406361,
+          "macro_f1": 0.5060047479402319,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking": {
+          "accuracy": 0.3215547703180212,
+          "macro_f1": 0.236009632503139,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "intervention_model": {
+          "accuracy": 0.5053003533568905,
+          "macro_f1": 0.1621651295564339,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.46996466431095407,
+          "macro_f1": 0.31390371286278324,
+          "n_classes_gold": 4,
+          "n_eval": 283
+        }
+      }
+    },
+    "hist_gbdt": {
+      "mean_accuracy": 0.6590106007067138,
+      "mean_macro_f1": 0.36608967568530143,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8869257950530035,
+          "macro_f1": 0.6057122953674678,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking": {
+          "accuracy": 0.38515901060070673,
+          "macro_f1": 0.24665027138045348,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "intervention_model": {
+          "accuracy": 0.8657243816254417,
+          "macro_f1": 0.19697990222705053,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49823321554770317,
+          "macro_f1": 0.41501623376623376,
+          "n_classes_gold": 4,
+          "n_eval": 283
+        }
+      }
+    },
+    "hist_gbdt_balanced": {
+      "mean_accuracy": 0.5070671378091873,
+      "mean_macro_f1": 0.3408878639905727,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.6784452296819788,
+          "macro_f1": 0.51585734965127,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking": {
+          "accuracy": 0.2968197879858657,
+          "macro_f1": 0.2551029893591915,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "intervention_model": {
+          "accuracy": 0.558303886925795,
+          "macro_f1": 0.15794247742514114,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49469964664310956,
+          "macro_f1": 0.4346486395266883,
+          "n_classes_gold": 4,
+          "n_eval": 283
+        }
+      }
+    },
+    "ontology_knn_k10": {
+      "mean_accuracy": 0.6581272084805654,
+      "mean_macro_f1": 0.3318885887358376,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8657243816254417,
+          "macro_f1": 0.48887832699619777,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking": {
+          "accuracy": 0.3957597173144876,
+          "macro_f1": 0.2544684319947478,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18752362948960302,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49469964664310956,
+          "macro_f1": 0.3966839664628018,
+          "n_classes_gold": 4,
+          "n_eval": 283
+        }
+      }
+    },
+    "ontology_knn_k20": {
+      "mean_accuracy": 0.6598939929328622,
+      "mean_macro_f1": 0.3138629838048634,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8939929328621908,
+          "macro_f1": 0.47201492537313433,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking": {
+          "accuracy": 0.3710247349823322,
+          "macro_f1": 0.2287532140961393,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "intervention_model": {
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.18681732580037663,
+          "n_classes_gold": 5,
+          "n_eval": 283
+        },
+        "enrollment_bucket": {
+          "accuracy": 0.49823321554770317,
+          "macro_f1": 0.36786646994980327,
+          "n_classes_gold": 4,
+          "n_eval": 283
+        }
+      }
+    }
+  },
+  "test_locked_single": {
+    "mean_accuracy": 0.6590106007067138,
+    "mean_macro_f1": 0.36608967568530143,
+    "per_target": {
+      "allocation": {
+        "accuracy": 0.8869257950530035,
+        "macro_f1": 0.6057122953674678,
+        "n_classes_gold": 2,
+        "n_eval": 283
+      },
+      "masking": {
+        "accuracy": 0.38515901060070673,
+        "macro_f1": 0.24665027138045348,
+        "n_classes_gold": 5,
+        "n_eval": 283
+      },
+      "intervention_model": {
+        "accuracy": 0.8657243816254417,
+        "macro_f1": 0.19697990222705053,
+        "n_classes_gold": 5,
+        "n_eval": 283
+      },
+      "enrollment_bucket": {
+        "accuracy": 0.49823321554770317,
+        "macro_f1": 0.41501623376623376,
+        "n_classes_gold": 4,
+        "n_eval": 283
+      }
+    }
+  },
+  "test_per_target_mixture": {
+    "mean_accuracy": 0.661660777385159,
+    "mean_macro_f1": 0.3434626768143341,
+    "per_target": {
+      "allocation": {
+        "accuracy": 0.8869257950530035,
+        "macro_f1": 0.5253668763102726,
+        "n_classes_gold": 2,
+        "n_eval": 283
+      },
+      "masking": {
+        "accuracy": 0.38515901060070673,
+        "macro_f1": 0.24665027138045348,
+        "n_classes_gold": 5,
+        "n_eval": 283
+      },
+      "intervention_model": {
+        "accuracy": 0.8763250883392226,
+        "macro_f1": 0.18681732580037663,
+        "n_classes_gold": 5,
+        "n_eval": 283
+      },
+      "enrollment_bucket": {
+        "accuracy": 0.49823321554770317,
+        "macro_f1": 0.41501623376623376,
+        "n_classes_gold": 4,
+        "n_eval": 283
+      }
+    }
+  },
+  "bootstrap_trial_mean": {
+    "single_minus_logistic": {
+      "mean_diff": -0.0026501766784452485,
+      "ci95_lo": -0.019434628975265045,
+      "ci95_hi": 0.016784452296819796,
+      "n_boot": 2000,
+      "n": 283
+    },
+    "single_minus_frequency": {
+      "mean_diff": 0.025618374558303958,
+      "ci95_lo": 0.004416961130742081,
+      "ci95_hi": 0.048586572438162556,
+      "n_boot": 2000,
+      "n": 283
+    },
+    "mixture_minus_logistic": {
+      "mean_diff": 0.0,
+      "ci95_lo": -0.01590106007067138,
+      "ci95_hi": 0.018551236749116518,
+      "n_boot": 2000,
+      "n": 283
+    },
+    "mixture_minus_single": {
+      "mean_diff": 0.0026501766784452485,
+      "ci95_lo": -0.004416961130742081,
+      "ci95_hi": 0.009717314487632578,
+      "n_boot": 2000,
+      "n": 283
+    }
+  },
+  "test_by_phase_locked_single": {
+    "PHASE1": {
+      "n": 61,
+      "mean_accuracy": 0.5860655737704918,
+      "mean_macro_f1": 0.38881876726858144
+    },
+    "PHASE1/PHASE2": {
+      "n": 26,
+      "mean_accuracy": 0.5576923076923077,
+      "mean_macro_f1": 0.31237225193107543
+    },
+    "PHASE2": {
+      "n": 61,
+      "mean_accuracy": 0.6147540983606558,
+      "mean_macro_f1": 0.3674598942373858
+    },
+    "PHASE3": {
+      "n": 75,
+      "mean_accuracy": 0.7833333333333333,
+      "mean_macro_f1": 0.3159455570169856
+    },
+    "PHASE4": {
+      "n": 47,
+      "mean_accuracy": 0.6702127659574468,
+      "mean_macro_f1": 0.33394965342064953
+    }
+  }
+}

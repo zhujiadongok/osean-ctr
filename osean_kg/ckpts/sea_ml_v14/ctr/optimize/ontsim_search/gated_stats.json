@@ -1,0 +1,90 @@
+{
+  "chrono_boot": {
+    "statistic": "trial_mean_accuracy",
+    "mean_diff_trial": 0.0,
+    "ci95_lo": 0.0,
+    "ci95_hi": 0.0,
+    "n_trials": 283,
+    "n_boot": 1500,
+    "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+  },
+  "pooled_boot": {
+    "statistic": "trial_mean_accuracy",
+    "mean_diff_trial": 0.018765133171912834,
+    "ci95_lo": 0.005447941888619854,
+    "ci95_hi": 0.03268765133171913,
+    "n_trials": 413,
+    "n_boot": 1500,
+    "note": "Resamples trials, not Material classes. Does not alone support inference to new Material classes."
+  },
+  "pooled_gate": 0.6390234059725585,
+  "lomo_class_exact": 0.6111610952484248,
+  "lomo_class_gate": 0.6192440968404066,
+  "lomo_trial_exact": 0.6174334140435835,
+  "lomo_trial_gate": 0.6265133171912833,
+  "lomo_per": [
+    {
+      "vo": "VO_0000561",
+      "n": 79,
+      "exact": 0.6719409282700423,
+      "gate": 0.6656118143459916,
+      "delta": -0.006329113924050667
+    },
+    {
+      "vo": "VO_0004673",
+      "n": 69,
+      "exact": 0.6521739130434783,
+      "gate": 0.6521739130434783,
+      "delta": 0.0
+    },
+    {
+      "vo": "VO_0001178",
+      "n": 63,
+      "exact": 0.5753968253968254,
+      "gate": 0.623015873015873,
+      "delta": 0.04761904761904767
+    },
+    {
+      "vo": "VO_0000642",
+      "n": 62,
+      "exact": 0.6236559139784946,
+      "gate": 0.5913978494623655,
+      "delta": -0.032258064516129115
+    },
+    {
+      "vo": "VO_0005198",
+      "n": 44,
+      "exact": 0.5454545454545454,
+      "gate": 0.5965909090909091,
+      "delta": 0.051136363636363646
+    },
+    {
+      "vo": "VO_0000761",
+      "n": 35,
+      "exact": 0.5857142857142857,
+      "gate": 0.6357142857142857,
+      "delta": 0.04999999999999993
+    },
+    {
+      "vo": "VO_0000047",
+      "n": 28,
+      "exact": 0.6071428571428571,
+      "gate": 0.5982142857142857,
+      "delta": -0.008928571428571397
+    },
+    {
+      "vo": "VO_0007062",
+      "n": 17,
+      "exact": 0.6764705882352942,
+      "gate": 0.6323529411764706,
+      "delta": -0.044117647058823595
+    },
+    {
+      "vo": "VO_0007063",
+      "n": 16,
+      "exact": 0.5625,
+      "gate": 0.578125,
+      "delta": 0.015625
+    }
+  ]
+}

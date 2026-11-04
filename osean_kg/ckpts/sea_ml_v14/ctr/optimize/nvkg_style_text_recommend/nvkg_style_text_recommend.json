@@ -1,0 +1,179 @@
+{
+  "protocol": {
+    "cohort": "SEA-CDM vaccine CTDR temporal split",
+    "split": "train start_date < 2022-01-01; test >=",
+    "n_train": 1135,
+    "n_test": 283,
+    "n_test_with_pep": 283,
+    "n_test_with_icr": 282,
+    "text_similarity": "sentence-transformers/all-MiniLM-L6-v2",
+    "nvkg_similarity": "fastText (published; not re-run here)",
+    "primary_source": "AACT design_outcomes.measure (primary)",
+    "caveat": "Same scoring protocol as NVKG Table 6 (max sim + rank/MRR), but vaccine CTDR cohort and embedding model \u2260 their drug-disease subset + fastText; they also cluster near-duplicate texts into shared nodes."
+  },
+  "nvkg_published_hrgat": {
+    "primary_endpoints": {
+      "3": {
+        "average_similarity": 0.721,
+        "mean_rank": 1.73,
+        "mrr": 0.697
+      },
+      "5": {
+        "average_similarity": 0.751,
+        "mean_rank": 2.62,
+        "mrr": 0.513
+      },
+      "10": {
+        "average_similarity": 0.779,
+        "mean_rank": 4.78,
+        "mrr": 0.344
+      }
+    },
+    "inclusion_criteria": {
+      "10": {
+        "average_similarity": 0.762,
+        "mean_rank": 3.42,
+        "mrr": 0.441
+      },
+      "30": {
+        "average_similarity": 0.812,
+        "mean_rank": 11.9,
+        "mrr": 0.174
+      },
+      "50": {
+        "average_similarity": 0.829,
+        "mean_rank": 21.4,
+        "mrr": 0.12
+      }
+    },
+    "note": "Devarakonda et al. JBI 2024 Table 6 HRGAT; different cohort/IDs/fastText"
+  },
+  "ours": {
+    "osean_exact_knn": {
+      "primary_endpoints": {
+        "3": {
+          "n_queries": 1113,
+          "mean_rank": 1.9245283018867925,
+          "mrr": 0.6380652890086852,
+          "average_similarity": 0.4051841547844893
+        },
+        "5": {
+          "n_queries": 1113,
+          "mean_rank": 2.9703504043126685,
+          "mrr": 0.46885294998502547,
+          "average_similarity": 0.4486954854893342
+        },
+        "10": {
+          "n_queries": 1113,
+          "mean_rank": 5.144654088050315,
+          "mrr": 0.3255907813859296,
+          "average_similarity": 0.5057957838226682
+        }
+      },
+      "inclusion_criteria": {
+        "10": {
+          "n_queries": 2173,
+          "mean_rank": 5.441785549930971,
+          "mrr": 0.30582400163624285,
+          "average_similarity": 0.45531903866299606
+        },
+        "30": {
+          "n_queries": 2173,
+          "mean_rank": 14.966866083755177,
+          "mrr": 0.15239006717487494,
+          "average_similarity": 0.551026058070845
+        },
+        "50": {
+          "n_queries": 2173,
+          "mean_rank": 23.975149562816384,
+          "mrr": 0.10907882915490634,
+          "average_similarity": 0.5860688676427599
+        }
+      }
+    },
+    "osean_ontsim_role_knn": {
+      "primary_endpoints": {
+        "3": {
+          "n_queries": 1113,
+          "mean_rank": 1.884995507637017,
+          "mrr": 0.6569332135369871,
+          "average_similarity": 0.41159296491135644
+        },
+        "5": {
+          "n_queries": 1113,
+          "mean_rank": 2.9829290206648698,
+          "mrr": 0.47319556753519026,
+          "average_similarity": 0.45835132081218916
+        },
+        "10": {
+          "n_queries": 1113,
+          "mean_rank": 5.054806828391734,
+          "mrr": 0.3406776337369329,
+          "average_similarity": 0.5059068770066694
+        }
+      },
+      "inclusion_criteria": {
+        "10": {
+          "n_queries": 2173,
+          "mean_rank": 5.4127933732167515,
+          "mrr": 0.30576939933819824,
+          "average_similarity": 0.4590081398971499
+        },
+        "30": {
+          "n_queries": 2173,
+          "mean_rank": 14.47077772664519,
+          "mrr": 0.1575302818490085,
+          "average_similarity": 0.5510147618523293
+        },
+        "50": {
+          "n_queries": 2173,
+          "mean_rank": 23.34054302807179,
+          "mrr": 0.11503402166574847,
+          "average_similarity": 0.5855683502833304
+        }
+      }
+    },
+    "title_semantic_knn": {
+      "primary_endpoints": {
+        "3": {
+          "n_queries": 1113,
+          "mean_rank": 2.0170709793351302,
+          "mrr": 0.6211440551063192,
+          "average_similarity": 0.4131658638108719
+        },
+        "5": {
+          "n_queries": 1113,
+          "mean_rank": 3.078167115902965,
+          "mrr": 0.4589697514225816,
+          "average_similarity": 0.47033270179341746
+        },
+        "10": {
+          "n_queries": 1113,
+          "mean_rank": 5.45193171608266,
+          "mrr": 0.30611817053865575,
+          "average_similarity": 0.537696343875906
+        }
+      },
+      "inclusion_criteria": {
+        "10": {
+          "n_queries": 2173,
+          "mean_rank": 5.083294983893235,
+          "mrr": 0.32409057042052897,
+          "average_similarity": 0.4923440052365247
+        },
+        "30": {
+          "n_queries": 2173,
+          "mean_rank": 14.342383801196503,
+          "mrr": 0.15948949915914457,
+          "average_similarity": 0.5894345201918786
+        },
+        "50": {
+          "n_queries": 2173,
+          "mean_rank": 22.60653474459273,
+          "mrr": 0.1222443207388719,
+          "average_similarity": 0.624257491897231
+        }
+      }
+    }
+  }
+}

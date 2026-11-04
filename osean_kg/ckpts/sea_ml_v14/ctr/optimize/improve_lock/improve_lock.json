@@ -1,0 +1,175 @@
+{
+  "protocol": {
+    "fit": "start < 2019-01-01",
+    "val": "2019-01-01 <= start < 2022-01-01",
+    "test": "start >= 2022-01-01",
+    "n_fit": 891,
+    "n_val": 244,
+    "n_test": 283,
+    "test_used_for_selection": false,
+    "improvements": [
+      "CompGCN-v2: 3 layers, self-loops, hard negatives, residual",
+      "same_context study-study edges (disease+platform+phase)",
+      "weighted inductive vectors",
+      "hybrid alpha/k grid + triple onto/emb/text fusion",
+      "gbdt/logistic + CompGCN vector features"
+    ]
+  },
+  "locked_on_validation": "hist_gbdt",
+  "val_score_locked": {
+    "mean_accuracy": 0.6557377049180328,
+    "mean_macro_f1": 0.347682922737664,
+    "per_target": {
+      "allocation": {
+        "accuracy": 0.8483606557377049,
+        "macro_f1": 0.484438353035235,
+        "n_classes_gold": 2,
+        "n_eval": 244
+      },
+      "masking": {
+        "accuracy": 0.3483606557377049,
+        "macro_f1": 0.21464173574468692,
+        "n_classes_gold": 5,
+        "n_eval": 244
+      },
+      "intervention_model": {
+        "accuracy": 0.860655737704918,
+        "macro_f1": 0.16962305986696233,
+        "n_classes_gold": 5,
+        "n_eval": 244
+      },
+      "enrollment_bucket": {
+        "accuracy": 0.5655737704918032,
+        "macro_f1": 0.5220285423037716,
+        "n_classes_gold": 4,
+        "n_eval": 244
+      }
+    }
+  },
+  "test_score_locked": {
+    "mean_accuracy": 0.6590106007067138,
+    "mean_macro_f1": 0.36608967568530143,
+    "per_target": {
+      "allocation": {
+        "accuracy": 0.8869257950530035,
+        "macro_f1": 0.6057122953674678,
+        "n_classes_gold": 2,
+        "n_eval": 283
+      },
+      "masking": {
+        "accuracy": 0.38515901060070673,
+        "macro_f1": 0.24665027138045348,
+        "n_classes_gold": 5,
+        "n_eval": 283
+      },
+      "intervention_model": {
+        "accuracy": 0.8657243816254417,
+        "macro_f1": 0.19697990222705053,
+        "n_classes_gold": 5,
+        "n_eval": 283
+      },
+      "enrollment_bucket": {
+        "accuracy": 0.49823321554770317,
+        "macro_f1": 0.41501623376623376,
+        "n_classes_gold": 4,
+        "n_eval": 283
+      }
+    }
+  },
+  "val_top15": [
+    {
+      "name": "hist_gbdt",
+      "mean_accuracy": 0.6557377049180328,
+      "mean_macro_f1": 0.347682922737664
+    },
+    {
+      "name": "d128_e700__triple_o0.5_e0.3_t0.2_k20",
+      "mean_accuracy": 0.6485655737704917,
+      "mean_macro_f1": 0.31835431559279515
+    },
+    {
+      "name": "d64_e400__triple_o0.5_e0.3_t0.2_k20",
+      "mean_accuracy": 0.6475409836065574,
+      "mean_macro_f1": 0.3274114419957158
+    },
+    {
+      "name": "ontology_knn_k20",
+      "mean_accuracy": 0.646516393442623,
+      "mean_macro_f1": 0.32322446328828125
+    },
+    {
+      "name": "d128_e700__triple_o0.4_e0.4_t0.2_k20",
+      "mean_accuracy": 0.6444672131147542,
+      "mean_macro_f1": 0.3235590869053776
+    },
+    {
+      "name": "d128_e700__triple_o0.5_e0.4_t0.1_k20",
+      "mean_accuracy": 0.6434426229508198,
+      "mean_macro_f1": 0.32053442962389866
+    },
+    {
+      "name": "d64_e400__triple_o0.45_e0.4_t0.15_k20",
+      "mean_accuracy": 0.6434426229508197,
+      "mean_macro_f1": 0.32262666813268465
+    },
+    {
+      "name": "d128_e500__triple_o0.5_e0.3_t0.2_k20",
+      "mean_accuracy": 0.6424180327868854,
+      "mean_macro_f1": 0.3239851280717146
+    },
+    {
+      "name": "d128_e500__triple_o0.4_e0.4_t0.2_k20",
+      "mean_accuracy": 0.6413934426229508,
+      "mean_macro_f1": 0.32452114844991836
+    },
+    {
+      "name": "d128_e700__triple_o0.35_e0.45_t0.2_k20",
+      "mean_accuracy": 0.6413934426229508,
+      "mean_macro_f1": 0.3208628504589376
+    },
+    {
+      "name": "d64_e400__triple_o0.5_e0.4_t0.1_k20",
+      "mean_accuracy": 0.6413934426229508,
+      "mean_macro_f1": 0.31999123066865853
+    },
+    {
+      "name": "d128_e700__triple_o0.45_e0.4_t0.15_k20",
+      "mean_accuracy": 0.6413934426229508,
+      "mean_macro_f1": 0.3187676129952973
+    },
+    {
+      "name": "d64_e400__hybrid_v2_a0.65_k20",
+      "mean_accuracy": 0.6413934426229507,
+      "mean_macro_f1": 0.3208453815265364
+    },
+    {
+      "name": "d128_e500__triple_o0.35_e0.45_t0.2_k20",
+      "mean_accuracy": 0.6403688524590164,
+      "mean_macro_f1": 0.3260452801054101
+    },
+    {
+      "name": "d64_e400__hybrid_v2_a0.25_k20",
+      "mean_accuracy": 0.6403688524590164,
+      "mean_macro_f1": 0.32229850430858054
+    }
+  ],
+  "test_scores": {
+    "logistic": {
+      "mean_accuracy": 0.661660777385159,
+      "mean_macro_f1": 0.33925396288492293
+    },
+    "ontology_knn_k20": {
+      "mean_accuracy": 0.6598939929328622,
+      "mean_macro_f1": 0.3138629838048634
+    },
+    "hist_gbdt": {
+      "mean_accuracy": 0.6590106007067138,
+      "mean_macro_f1": 0.36608967568530143
+    },
+    "frequency_by_phase": {
+      "mean_accuracy": 0.63339222614841,
+      "mean_macro_f1": 0.25653758149688133
+    }
+  },
+  "gnn_involved": false
+}

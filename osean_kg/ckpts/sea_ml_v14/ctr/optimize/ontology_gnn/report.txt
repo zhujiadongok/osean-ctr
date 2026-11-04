@@ -1,0 +1,9 @@
+# Ontology-aware CTDR GNN
+
+train_cfg: {"dim": 64, "epochs": 60, "lr": 0.01, "lambda_link": 0.15, "n_layers": 3, "seed": 7, "device": null}
+total_seconds: 174.0
+
+## Chronological Setting A (field-mean accuracy)
+  0.6360  trial=0.6360  ontology_rgcn_+vo
+  0.6325  trial=0.6325  ontology_rgcn_no_vo
+  Δ(+vo − no_vo) field = +0.0035

@@ -1,0 +1,20 @@
+locked=hist_gbdt
+gnn_locked=False
+
+## VAL TOP
+  0.6557  hist_gbdt
+  0.6465  ontology_knn_k20
+  0.6373  logistic
+  0.6291  sup_compgcn_d128_e500_l0.2_lr0.005
+  0.6291  sup_compgcn_d128_e400_l0.1_lr0.01
+  0.6270  sup_compgcn_d128_e500_l0.2_lr0.01
+  0.6189  sup_compgcn_d64_e300_l0.2_lr0.01
+  0.6168  sup_compgcn_d128_e400_l0.3_lr0.005
+  0.6014  frequency_by_phase
+
+## TEST
+  0.6617  logistic
+  0.6599  ontology_knn_k20
+  0.6590  hist_gbdt
+  0.6343  sup_compgcn_d128_e500_l0.2_lr0.005
+  0.6334  frequency_by_phase

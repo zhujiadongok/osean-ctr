@@ -1,0 +1,119 @@
+{
+  "description": "Supervised relational GNN on Study\u2013feature\u2013VO input graph. Ablation toggles VO subClassOf/has_role edges only. Test studies encoded inductively from feature/VO embeddings.",
+  "train_cfg": {
+    "dim": 64,
+    "epochs": 60,
+    "lr": 0.01,
+    "lambda_link": 0.15,
+    "n_layers": 3,
+    "seed": 7,
+    "device": null
+  },
+  "chrono": {
+    "n_train": 1135,
+    "n_test": 283,
+    "methods": {
+      "ontology_rgcn_+vo": {
+        "mean_accuracy": 0.6360424028268552,
+        "mean_macro_f1": 0.2518288509435071,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8939929328621908,
+            "macro_f1": 0.47201492537313433,
+            "n_classes_gold": 2,
+            "n_eval": 283
+          },
+          "masking": {
+            "accuracy": 0.31095406360424027,
+            "macro_f1": 0.09487870619946091,
+            "n_classes_gold": 5,
+            "n_eval": 283
+          },
+          "intervention_model": {
+            "accuracy": 0.8763250883392226,
+            "macro_f1": 0.18681732580037663,
+            "n_classes_gold": 5,
+            "n_eval": 283
+          },
+          "enrollment_bucket": {
+            "accuracy": 0.4628975265017668,
+            "macro_f1": 0.25360444640105656,
+            "n_classes_gold": 4,
+            "n_eval": 283
+          }
+        },
+        "trial_mean_accuracy": 0.6360424028268551,
+        "train_meta": {
+          "include_vo_relations": true,
+          "include_same_context": true,
+          "n_nodes": 1393,
+          "n_triples": 16667,
+          "n_vo_relation_edges": 470,
+          "n_same_context_edges": 3712,
+          "dim": 64,
+          "epochs": 60,
+          "lr": 0.01,
+          "lambda_link": 0.15,
+          "n_layers": 3,
+          "final_loss": 0.21191120147705078,
+          "device": "cpu",
+          "n_fit": 1135,
+          "n_query": 283
+        },
+        "seconds": 105.9
+      },
+      "ontology_rgcn_no_vo": {
+        "mean_accuracy": 0.6325088339222615,
+        "mean_macro_f1": 0.24409567827454068,
+        "per_target": {
+          "allocation": {
+            "accuracy": 0.8939929328621908,
+            "macro_f1": 0.47201492537313433,
+            "n_classes_gold": 2,
+            "n_eval": 283
+          },
+          "masking": {
+            "accuracy": 0.31095406360424027,
+            "macro_f1": 0.09487870619946091,
+            "n_classes_gold": 5,
+            "n_eval": 283
+          },
+          "intervention_model": {
+            "accuracy": 0.8763250883392226,
+            "macro_f1": 0.18681732580037663,
+            "n_classes_gold": 5,
+            "n_eval": 283
+          },
+          "enrollment_bucket": {
+            "accuracy": 0.44876325088339225,
+            "macro_f1": 0.22267175572519085,
+            "n_classes_gold": 4,
+            "n_eval": 283
+          }
+        },
+        "trial_mean_accuracy": 0.6325088339222615,
+        "train_meta": {
+          "include_vo_relations": false,
+          "include_same_context": true,
+          "n_nodes": 1393,
+          "n_triples": 16197,
+          "n_vo_relation_edges": 0,
+          "n_same_context_edges": 3712,
+          "dim": 64,
+          "epochs": 60,
+          "lr": 0.01,
+          "lambda_link": 0.15,
+          "n_layers": 3,
+          "final_loss": 0.20705817639827728,
+          "device": "cpu",
+          "n_fit": 1135,
+          "n_query": 283
+        },
+        "seconds": 60.8
+      }
+    },
+    "delta_vo_minus_novo_field": 0.0035335689045936647
+  },
+  "quick": true,
+  "seconds_total": 174.0
+}

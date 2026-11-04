@@ -1,0 +1,20 @@
+{
+  "confirmatory_method": "hist_gbdt",
+  "selection": "max structure mean accuracy on 2019-01-01..2021-12-31 (n=244); test start>=2022 scored once",
+  "structure_mean_acc": 0.6590106007067138,
+  "structure_mean_macro_f1": 0.36608967568530143,
+  "structure_targets": [
+    "allocation",
+    "masking",
+    "intervention_model",
+    "enrollment_bucket"
+  ],
+  "beats_frequency": true,
+  "tied_with_logistic": true,
+  "exploratory_test_tuned": {
+    "best_structure_method": "hybrid_compgcn128_a0.75_k10",
+    "structure_mean_acc": 0.6713780918727915,
+    "structure_mean_macro_f1": 0.34935631279230217,
+    "note": "alpha, k, and dimension were chosen on the 2022+ test set. On the inner validation split this hybrid scored 0.624 and was not locked."
+  }
+}

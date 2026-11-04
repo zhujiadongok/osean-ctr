@@ -1,0 +1,5 @@
+variable,recommended,actual_registered,match
+allocation,RANDOMIZED,RANDOMIZED,True
+masking,QUADRUPLE,QUADRUPLE,True
+intervention_model,PARALLEL,SEQUENTIAL,False
+enrollment_bucket,ge_500,50_149,False

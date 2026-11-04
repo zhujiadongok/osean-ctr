@@ -1,0 +1,23 @@
+locked=hist_gbdt
+best_graph=graph_family_ensemble
+graph_wins=False
+
+## VAL
+  0.8084  hist_gbdt
+  0.8012  frequency_by_phase
+  0.8002  logistic
+  0.7859  ontology_knn_k20
+  0.7490  graph_family_ensemble
+  0.7203  gbdt_plus_feature_rgcn
+  0.7131  logistic_plus_feature_rgcn
+  0.6762  feature_rgcn
+
+## TEST
+  0.8198  hist_gbdt <-- >=0.80
+  0.8136  logistic <-- >=0.80
+  0.8021  frequency_by_phase <-- >=0.80
+  0.7995  ontology_knn_k20
+  0.7889  graph_family_ensemble
+  0.7270  feature_rgcn
+  0.6617  gbdt_plus_feature_rgcn
+  0.5389  logistic_plus_feature_rgcn

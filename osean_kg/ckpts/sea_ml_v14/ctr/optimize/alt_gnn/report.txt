@@ -1,0 +1,25 @@
+locked=hist_gbdt
+best_gnn=rgcn_d128_e400_lr0.01 val=0.6352
+gnn_locked=False
+
+## VAL TOP
+  0.6557  hist_gbdt
+  0.6465  ontology_knn_k20
+  0.6373  logistic
+  0.6352  rgcn_d128_e400_lr0.01
+  0.6322  sage_d128_e400_lr0.005
+  0.6301  rgcn_d128_e400_lr0.005
+  0.6301  sage_d128_e400_lr0.01
+  0.6260  sage_d64_e300_lr0.01
+  0.6209  rgcn_d64_e300_lr0.01
+  0.6014  frequency_by_phase
+  0.5850  gat_d128_e400_lr0.005
+  0.5574  gat_d64_e300_lr0.01
+  0.5564  gat_d128_e400_lr0.01
+
+## TEST
+  0.6617  logistic
+  0.6599  ontology_knn_k20
+  0.6590  hist_gbdt
+  0.6369  rgcn_d128_e400_lr0.01
+  0.6334  frequency_by_phase

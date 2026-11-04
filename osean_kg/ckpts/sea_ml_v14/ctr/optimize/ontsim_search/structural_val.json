@@ -1,0 +1,1564 @@
+[
+  {
+    "key": "ch0_sib0_ic1_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6516393442622951,
+    "mean_macro_f1": 0.33414369914170305,
+    "sec": 1.13
+  },
+  {
+    "key": "ch0_sib1_ic1_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6485655737704918,
+    "mean_macro_f1": 0.33685166141048495,
+    "sec": 3.13
+  },
+  {
+    "key": "ch1_sib1_ic1_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6485655737704918,
+    "mean_macro_f1": 0.3274082453732764,
+    "sec": 0.86
+  },
+  {
+    "key": "ch1_sib1_ic1_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6485655737704918,
+    "mean_macro_f1": 0.3272924236949547,
+    "sec": 0.96
+  },
+  {
+    "key": "ch1_sib1_ic1_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6485655737704918,
+    "mean_macro_f1": 0.3272924236949547,
+    "sec": 1.08
+  },
+  {
+    "key": "ch1_sib1_ic1_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6475409836065574,
+    "mean_macro_f1": 0.3258201843115311,
+    "sec": 0.89
+  },
+  {
+    "key": "ch0_sib0_ic1_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6475409836065573,
+    "mean_macro_f1": 0.32938464207156015,
+    "sec": 0.79
+  },
+  {
+    "key": "ch0_sib0_ic1_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.646516393442623,
+    "mean_macro_f1": 0.33068843183191876,
+    "sec": 1.68
+  },
+  {
+    "key": "ch0_sib0_ic1_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.646516393442623,
+    "mean_macro_f1": 0.33068843183191876,
+    "sec": 0.95
+  },
+  {
+    "key": "ch0_sib0_ic1_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.646516393442623,
+    "mean_macro_f1": 0.33068843183191876,
+    "sec": 1.02
+  },
+  {
+    "key": "ch1_sib1_ic1_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.646516393442623,
+    "mean_macro_f1": 0.32411820208323305,
+    "sec": 0.94
+  },
+  {
+    "key": "ch0_sib1_ic1_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6454918032786886,
+    "mean_macro_f1": 0.34549964017181645,
+    "sec": 1.28
+  },
+  {
+    "key": "ch0_sib0_ic1_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6454918032786885,
+    "mean_macro_f1": 0.32505687735135014,
+    "sec": 1.02
+  },
+  {
+    "key": "ch1_sib1_ic0_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6454918032786885,
+    "mean_macro_f1": 0.32367065012817164,
+    "sec": 1.07
+  },
+  {
+    "key": "ch1_sib0_ic1_rolesep_a0.20_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6454918032786885,
+    "mean_macro_f1": 0.3229695718627273,
+    "sec": 0.81
+  },
+  {
+    "key": "ch1_sib0_ic1_rolesep_a0.30_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6454918032786885,
+    "mean_macro_f1": 0.3229695718627273,
+    "sec": 0.85
+  },
+  {
+    "key": "ch1_sib0_ic1_rolesep_a0.50_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6454918032786885,
+    "mean_macro_f1": 0.3229695718627273,
+    "sec": 0.85
+  },
+  {
+    "key": "ch1_sib0_ic1_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6444672131147541,
+    "mean_macro_f1": 0.32500382333175837,
+    "sec": 0.9
+  },
+  {
+    "key": "ch1_sib0_ic1_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6444672131147541,
+    "mean_macro_f1": 0.32500382333175837,
+    "sec": 0.88
+  },
+  {
+    "key": "ch1_sib0_ic1_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6444672131147541,
+    "mean_macro_f1": 0.32500382333175837,
+    "sec": 0.85
+  },
+  {
+    "key": "ch1_sib1_ic0_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6444672131147541,
+    "mean_macro_f1": 0.3221432215594955,
+    "sec": 1.66
+  },
+  {
+    "key": "ch1_sib1_ic0_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6444672131147541,
+    "mean_macro_f1": 0.3221432215594955,
+    "sec": 1.18
+  },
+  {
+    "key": "ch1_sib1_ic0_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6424180327868854,
+    "mean_macro_f1": 0.3203210142992926,
+    "sec": 0.87
+  },
+  {
+    "key": "ch1_sib1_ic0_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6424180327868854,
+    "mean_macro_f1": 0.3202880168820308,
+    "sec": 1.14
+  },
+  {
+    "key": "ch0_sib1_ic0_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6424180327868853,
+    "mean_macro_f1": 0.32930054693089306,
+    "sec": 0.8
+  },
+  {
+    "key": "ch1_sib0_ic1_roleunion_a0.30_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6424180327868853,
+    "mean_macro_f1": 0.3232169551694899,
+    "sec": 0.87
+  },
+  {
+    "key": "ch1_sib0_ic0_rolesep_a0.20_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6424180327868853,
+    "mean_macro_f1": 0.32084477414902013,
+    "sec": 0.8
+  },
+  {
+    "key": "ch1_sib0_ic0_rolesep_a0.30_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6424180327868853,
+    "mean_macro_f1": 0.32084477414902013,
+    "sec": 0.95
+  },
+  {
+    "key": "ch1_sib0_ic0_rolesep_a0.50_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6424180327868853,
+    "mean_macro_f1": 0.32084477414902013,
+    "sec": 0.92
+  },
+  {
+    "key": "ch0_sib0_ic1_rolesep_a0.20_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6413934426229508,
+    "mean_macro_f1": 0.3243298218317875,
+    "sec": 0.85
+  },
+  {
+    "key": "ch0_sib0_ic1_rolesep_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6413934426229508,
+    "mean_macro_f1": 0.3243298218317875,
+    "sec": 0.93
+  },
+  {
+    "key": "ch0_sib0_ic1_rolesep_a0.50_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6413934426229508,
+    "mean_macro_f1": 0.3243298218317875,
+    "sec": 0.77
+  },
+  {
+    "key": "ch1_sib0_ic0_roleunion_a0.30_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6413934426229508,
+    "mean_macro_f1": 0.3232234882255271,
+    "sec": 1.09
+  },
+  {
+    "key": "ch1_sib0_ic0_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6413934426229508,
+    "mean_macro_f1": 0.3229439835901414,
+    "sec": 1.07
+  },
+  {
+    "key": "ch1_sib0_ic1_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6413934426229508,
+    "mean_macro_f1": 0.3215805160988403,
+    "sec": 0.88
+  },
+  {
+    "key": "ch0_sib0_ic1_roleunion_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6413934426229508,
+    "mean_macro_f1": 0.32015250151322894,
+    "sec": 0.76
+  },
+  {
+    "key": "ch0_sib0_ic0_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.33028105626262433,
+    "sec": 0.92
+  },
+  {
+    "key": "ch1_sib0_ic1_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.32361490738827536,
+    "sec": 0.85
+  },
+  {
+    "key": "ch1_sib0_ic1_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.32361490738827536,
+    "sec": 0.94
+  },
+  {
+    "key": "ch1_sib0_ic0_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.32313225238821164,
+    "sec": 0.74
+  },
+  {
+    "key": "ch0_sib1_ic1_roleunion_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.3226306114101847,
+    "sec": 0.82
+  },
+  {
+    "key": "ch0_sib1_ic1_rolesep_a0.20_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.3216271937004467,
+    "sec": 0.9
+  },
+  {
+    "key": "ch0_sib1_ic1_rolesep_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.3216271937004467,
+    "sec": 0.77
+  },
+  {
+    "key": "ch0_sib1_ic1_rolesep_a0.50_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.3216271937004467,
+    "sec": 0.87
+  },
+  {
+    "key": "ch1_sib0_ic0_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.3210742303546108,
+    "sec": 1.34
+  },
+  {
+    "key": "ch1_sib0_ic0_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.3210742303546108,
+    "sec": 1.19
+  },
+  {
+    "key": "ch0_sib1_ic0_roleunion_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6403688524590164,
+    "mean_macro_f1": 0.3210306605842805,
+    "sec": 0.93
+  },
+  {
+    "key": "ch0_sib1_ic0_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.33737943195265685,
+    "sec": 0.87
+  },
+  {
+    "key": "ch0_sib0_ic0_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.3296261149153236,
+    "sec": 1.8
+  },
+  {
+    "key": "ch0_sib0_ic0_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.3293968134305866,
+    "sec": 0.87
+  },
+  {
+    "key": "ch0_sib0_ic0_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.32916953974135843,
+    "sec": 1.28
+  },
+  {
+    "key": "ch0_sib0_ic0_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.32916953974135843,
+    "sec": 0.87
+  },
+  {
+    "key": "ch0_sib0_ic0_rolesep_if_no_exact_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep_if_no_exact",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.32916953974135843,
+    "sec": 0.76
+  },
+  {
+    "key": "ch0_sib1_ic0_rolesep_a0.20_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.32057147112134643,
+    "sec": 0.74
+  },
+  {
+    "key": "ch0_sib1_ic0_rolesep_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.32057147112134643,
+    "sec": 0.92
+  },
+  {
+    "key": "ch0_sib1_ic0_rolesep_a0.50_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.639344262295082,
+    "mean_macro_f1": 0.32057147112134643,
+    "sec": 0.86
+  },
+  {
+    "key": "ch1_sib0_ic0_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6383196721311476,
+    "mean_macro_f1": 0.32194868729028514,
+    "sec": 1.9
+  },
+  {
+    "key": "ch0_sib0_ic0_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6383196721311475,
+    "mean_macro_f1": 0.32613406735878847,
+    "sec": 0.84
+  },
+  {
+    "key": "ch0_sib1_ic1_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672132,
+    "mean_macro_f1": 0.32861210133676594,
+    "sec": 0.89
+  },
+  {
+    "key": "ch0_sib1_ic0_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672132,
+    "mean_macro_f1": 0.32801461317963176,
+    "sec": 1.1
+  },
+  {
+    "key": "ch0_sib0_ic0_rolesep_a0.50_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672132,
+    "mean_macro_f1": 0.3255922097245405,
+    "sec": 0.99
+  },
+  {
+    "key": "ch0_sib0_ic0_roleunion_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672132,
+    "mean_macro_f1": 0.32539894692008164,
+    "sec": 0.95
+  },
+  {
+    "key": "ch0_sib0_ic0_rolesep_a0.20_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672132,
+    "mean_macro_f1": 0.32509258981995875,
+    "sec": 2.04
+  },
+  {
+    "key": "ch0_sib0_ic0_rolesep_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672132,
+    "mean_macro_f1": 0.32509258981995875,
+    "sec": 0.84
+  },
+  {
+    "key": "ch1_sib0_ic0_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": false,
+      "use_ic": false,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672132,
+    "mean_macro_f1": 0.32186401461193814,
+    "sec": 1.04
+  },
+  {
+    "key": "ch0_sib1_ic1_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6372950819672131,
+    "mean_macro_f1": 0.32974231202873383,
+    "sec": 0.9
+  },
+  {
+    "key": "ch0_sib1_ic0_rolesep_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6362704918032787,
+    "mean_macro_f1": 0.3286401602252329,
+    "sec": 1.13
+  },
+  {
+    "key": "ch0_sib1_ic0_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6362704918032787,
+    "mean_macro_f1": 0.3275136085223834,
+    "sec": 1.28
+  },
+  {
+    "key": "ch0_sib1_ic1_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6352459016393444,
+    "mean_macro_f1": 0.3270129391038258,
+    "sec": 0.9
+  },
+  {
+    "key": "ch0_sib1_ic1_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6352459016393442,
+    "mean_macro_f1": 0.3276780588085654,
+    "sec": 1.96
+  },
+  {
+    "key": "ch0_sib1_ic0_rolesep_a0.50_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": false,
+      "role_mode": "sep",
+      "alpha_role": 0.5,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 1.0,
+      "w_material": 0.5,
+      "w_route": 0.0
+    },
+    "mean_accuracy": 0.6342213114754098,
+    "mean_macro_f1": 0.3266061906903136,
+    "sec": 1.26
+  }
+]

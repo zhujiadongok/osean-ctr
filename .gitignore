@@ -14,3 +14,9 @@ paper_figures/
 .env.*
 *.tmp
 _tmp_*
+
+# large / regenerable CTR artifacts
+osean_kg/ckpts/sea_ml_v14/ctr/embeddings.npz
+osean_kg/ckpts/sea_ml_v14/ctr/optimize/embeddings_train.npz
+osean_kg/ckpts/sea_ml_v14/ctr/optimize/graph_export/
+osean_kg/ckpts/sea_ml_v14/ctr/**/__pycache__/

@@ -1,0 +1,170 @@
+[
+  {
+    "key": "ch1_sib1_ic1_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.6577868852459017,
+    "mean_macro_f1": 0.3483900108012627
+  },
+  {
+    "key": "ch1_sib1_ic1_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.6577868852459017,
+    "mean_macro_f1": 0.3483158414974652
+  },
+  {
+    "key": "ch1_sib1_ic1_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.6577868852459017,
+    "mean_macro_f1": 0.3483158414974652
+  },
+  {
+    "key": "ch1_sib1_ic1_roleunion_a0.30_gate0",
+    "cfg": {
+      "children_depth": 1,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "union",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.6577868852459017,
+    "mean_macro_f1": 0.3483158414974652
+  },
+  {
+    "key": "ch0_sib1_ic1_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": true,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.6547131147540983,
+    "mean_macro_f1": 0.3492964349747101
+  },
+  {
+    "key": "ch0_sib0_ic1_rolesep_a0.20_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "sep",
+      "alpha_role": 0.2,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 0.5,
+      "w_material": 0.25,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.6547131147540983,
+    "mean_macro_f1": 0.3399176453228403
+  },
+  {
+    "key": "ch0_sib0_ic1_rolenone_a0.30_gate0",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": false
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 0.5,
+      "w_platform": 0.5,
+      "w_material": 0.25,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.653688524590164,
+    "mean_macro_f1": 0.33945537849260293
+  },
+  {
+    "key": "ch0_sib0_ic1_rolenone_a0.30_gate1",
+    "cfg": {
+      "children_depth": 0,
+      "use_siblings": false,
+      "use_ic": true,
+      "role_mode": "none",
+      "alpha_role": 0.3,
+      "gated_query": true
+    },
+    "weights": {
+      "w_disease": 1.0,
+      "w_phase": 1.0,
+      "w_purpose": 1.0,
+      "w_platform": 0.5,
+      "w_material": 0.5,
+      "w_route": 0.25
+    },
+    "mean_accuracy": 0.6536885245901639,
+    "mean_macro_f1": 0.3462186915903135
+  }
+]
