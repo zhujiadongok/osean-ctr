@@ -1,6 +1,6 @@
 # Data sidecars
 
-`sea_cdm_v14/` holds the **CTDR feature tables** used in the paper analyses (not the full official SEA-CDM core dump).
+`sea_cdm_v14/` holds the **CTR feature tables** used in the paper analyses (not the full official SEA-CDM core dump).
 
 | File | Role |
 |------|------|
